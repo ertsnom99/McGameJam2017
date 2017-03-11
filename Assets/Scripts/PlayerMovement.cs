@@ -20,9 +20,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		characterController = GetComponent<CharacterController>();
         spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
-        animator = transform.GetChild(0).GetComponent<Animator>();	
-        print(spriteRenderer);
-        print(animator);
+        animator = transform.GetChild(0).GetComponent<Animator>();
     }
 
     public void moveCharacter(Hashtable inputs)
