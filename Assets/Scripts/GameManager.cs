@@ -1,27 +1,71 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public const int CHARACTER_SPEED = 1;
-    public GameObject[] infectiveObjects;
-    public int numberBotCharacters = 20;
+    public const int CHARACTER_SPEED = 5;
+
     public TextMesh timerText;
 
-    private float timer = 180.0f;
-    
+    public AreaManager areaManagerScript;
 
-    private void Update()
+    public GameObject computerCharacter;
+    public GameObject computerContainers;
+
+    public GameObject[] infectiveObjects;
+
+    private int numberBotCharacters;
+    private float remainingTime;
+
+    private void Awake()
     {
-        ManageTimer(); 
+        InitializeVariables();
+        CreateBots();
+        InitializeTimer();
     }
 
-    private void ManageTimer()
+    private void InitializeVariables()
     {
-        timer -= Time.deltaTime;
-        int minutes = (int) Mathf.Floor(timer / 60);
-        int seconds = (int) Mathf.Floor(timer % 60);
-        timerText.text = minutes + ":" + seconds;
+        numberBotCharacters = 20;
+        remainingTime = 180.0f;
+    }
+
+    private void CreateBots()
+    {
+        for (int i = 0; i < numberBotCharacters; i++)
+        {
+            Vector3 spawnPoint = areaManagerScript.GeneratePosition();
+
+            GameObject computer = Instantiate(computerCharacter);
+            computer.GetComponent<AIMovement>().areaManager = areaManagerScript;
+
+            computer.transform.position = spawnPoint;
+            computer.transform.parent = computerContainers.transform;
+        }
+    }
+
+    private void InitializeTimer()
+    {
+        UpdateTimer(remainingTime);
+        StartCoroutine(IncrementTimer());
+    }
+
+    private IEnumerator IncrementTimer()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1.0f);
+            remainingTime -= 1.0f;
+            UpdateTimer(remainingTime);
+        }
+    }
+
+    private void UpdateTimer(float remainingTime)
+    {
+        int minutes = (int)Mathf.Floor(remainingTime / 60);
+        int seconds = (int)Mathf.Floor(remainingTime % 60);
+        timerText.text = minutes + ":" + (100 + seconds).ToString().Substring(1, 2);
     }
 }
