@@ -2,7 +2,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class GameManager : MonoBehaviour
 {
     public const int CHARACTER_SPEED = 5;
@@ -49,10 +48,10 @@ public class GameManager : MonoBehaviour
     private void InitializeTimer()
     {
         UpdateTimer(remainingTime);
-        StartCoroutine(IncrementTimer());
+        StartCoroutine(DecrementTimer());
     }
 
-    private IEnumerator IncrementTimer()
+    private IEnumerator DecrementTimer()
     {
         while (true)
         {
@@ -69,3 +68,5 @@ public class GameManager : MonoBehaviour
         timerText.text = minutes + ":" + (100 + seconds).ToString().Substring(1, 2);
     }
 }
+
+

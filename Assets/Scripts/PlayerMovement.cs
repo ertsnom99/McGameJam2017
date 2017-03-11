@@ -39,14 +39,17 @@ public class PlayerMovement : MonoBehaviour
     {
         float pi = Mathf.PI;
 
-        if (movement.x < Mathf.Cos(pi/4) && movement.x > Mathf.Cos(3*pi/4) && movement.z > Mathf.Sin(pi/4)) {
+        if (movement.magnitude < 0.1f)
+        {
+            animator.SetTrigger("idle");
+        } else if (movement.x < Mathf.Cos(pi/4) && movement.x > Mathf.Cos(3*pi/4) && movement.z > Mathf.Sin(pi/4)) {
             animator.SetTrigger("moveVerticalUp");
         } else if (movement.x > Mathf.Cos(-3*pi/4) && movement.x < Mathf.Cos(-pi/4) && movement.z < Mathf.Sin(-pi/4))
         {
             animator.SetTrigger("moveVerticalDown");
         }
-        else if ((movement.x > Mathf.Cos(pi/4) && movement.z < Mathf.Cos(pi / 4) && movement.z > Mathf.Cos(-pi/4)) ||
-            (movement.x < Mathf.Cos(3*pi / 4) && movement.z < Mathf.Cos(pi / 4) && movement.z > Mathf.Cos(-pi / 4)))
+        else if ((movement.x > Mathf.Cos(pi/4) && movement.z < Mathf.Sin(pi / 4) && movement.z > Mathf.Sin(-pi/4)) ||
+            (movement.x < Mathf.Cos(3*pi / 4) && movement.z < Mathf.Sin(pi / 4) && movement.z > Mathf.Sin(-pi/4)))
         {
             animator.SetTrigger("moveHorizontal");
             bool flipSprite = (spriteRenderer.flipX ? (movement.x > 0.1f) : (movement.x < 0.1f));

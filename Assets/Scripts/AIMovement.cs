@@ -14,6 +14,7 @@ public class AIMovement : MonoBehaviour
     private float maxWaitTime;
 
     private bool waitingForTarget;
+    private Vector3 previousPosition;
 
     public AreaManager areaManager;
 
@@ -32,6 +33,11 @@ public class AIMovement : MonoBehaviour
         maxWaitTime = 3.0f;
     }
 
+    void Start()
+    {
+        previousPosition = transform.position;
+    }
+
     void InitializeNavMeshAgent()
     {
         navComponent = GetComponent<NavMeshAgent>();
@@ -46,6 +52,9 @@ public class AIMovement : MonoBehaviour
             waitingForTarget = true;
             StartCoroutine(SelectNewTarget());
         }
+        Vector3 currentMovement = transform.position - previousPosition;
+        previousPosition = transform.position;
+        //Animate(currentMovement);
     }
 
     private IEnumerator SelectNewTarget()
@@ -54,4 +63,6 @@ public class AIMovement : MonoBehaviour
         navComponent.SetDestination(areaManager.GeneratePosition());
         waitingForTarget = false;
     }
+
+
 }
