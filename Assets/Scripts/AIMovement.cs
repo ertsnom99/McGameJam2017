@@ -7,13 +7,14 @@ using UnityEngine.AI;
 public class AIMovement : MonoBehaviour
 {
     private NavMeshAgent navComponent;
+    private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
     private float minDistForDestReached;
     private float maxWaitTime;
 
     private bool waitingForTarget;
 
-    // Use this for initialization
     void Awake()
     {
         InitializeVariables();
@@ -23,6 +24,8 @@ public class AIMovement : MonoBehaviour
     void InitializeVariables()
     {
         navComponent = GetComponent<NavMeshAgent>();
+        spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
 
         minDistForDestReached = 0.075f;
         maxWaitTime = 3.0f;
@@ -33,7 +36,6 @@ public class AIMovement : MonoBehaviour
         navComponent.speed = GameManager.CHARACTER_SPEED;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (navComponent.remainingDistance <= minDistForDestReached && !waitingForTarget)

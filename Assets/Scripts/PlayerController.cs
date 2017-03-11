@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterMovement))]
+[RequireComponent(typeof(PlayerMovement))]
+[RequireComponent(typeof(CharacterInteraction))]
 
 public class PlayerController : MonoBehaviour {
 
@@ -10,8 +11,9 @@ public class PlayerController : MonoBehaviour {
     public const string ACTION_INPUT = "AInput";
     public const string INFECT_INPUT = "IInput";
 
-    private CharacterMovement movementScript;
-
+    private PlayerMovement movementScript;
+    private CharacterInteraction interactionScript;
+  
     private void Awake()
     {
         InitializeVariables();
@@ -19,13 +21,22 @@ public class PlayerController : MonoBehaviour {
 
     private void InitializeVariables()
     {
-        movementScript = GetComponent<CharacterMovement>();
+        movementScript = GetComponent<PlayerMovement>();
+        interactionScript = GetComponent<CharacterInteraction>();
     }
 	
 	void Update () {
         Hashtable inputs = fetchInputs();
         movementScript.moveCharacter(inputs);
-	}
+        if ((bool)inputs[ACTION_INPUT]) // interact with object
+        {
+            interactionScript.interact();
+        }
+        if ((bool)inputs[INFECT_INPUT])
+        {
+            interactionScript.infect();
+        }
+    }
 
     private Hashtable fetchInputs()
     {
@@ -34,8 +45,9 @@ public class PlayerController : MonoBehaviour {
         ht.Add(VERTICAL_INPUT, Input.GetAxis("Vertical"));
         ht.Add(HORIZONTAL_INPUT, Input.GetAxis("Horizontal"));
         ht.Add(ACTION_INPUT, Input.GetButtonDown("Fire1"));
-        ht.Add(INFECT_INPUT, Input.GetButtonDown("Fire3"));      
-
+        ht.Add(INFECT_INPUT, Input.GetButtonDown("Fire3"));    
+        
         return ht;
     }
 }
+	
