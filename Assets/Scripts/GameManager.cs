@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+
 public class GameManager : MonoBehaviour
 {
     public const int CHARACTER_SPEED = 5;
@@ -11,24 +10,34 @@ public class GameManager : MonoBehaviour
     public AreaManager areaManagerScript;
 
     public GameObject computerCharacter;
-    public GameObject computerContainers;
+    public GameObject playerCharacter;
+    public GameObject characterContainers;
+
+    public ControllersManager controllersManager;
 
     public GameObject[] infectiveObjects;
 
     private int numberBotCharacters;
+
     private float remainingTime;
 
     private void Awake()
     {
         InitializeVariables();
-        CreateBots();
-        InitializeTimer();
     }
 
     private void InitializeVariables()
     {
         numberBotCharacters = 20;
         remainingTime = 180.0f;
+    }
+
+    private void Start()
+    {
+        CreateBots();
+        controllersManager.SearchForControllers();
+        CreatePlayers();
+        InitializeTimer();
     }
 
     private void CreateBots()
@@ -41,7 +50,21 @@ public class GameManager : MonoBehaviour
             computer.GetComponent<AIMovement>().areaManager = areaManagerScript;
 
             computer.transform.position = spawnPoint;
-            computer.transform.parent = computerContainers.transform;
+            computer.transform.parent = characterContainers.transform;
+        }
+    }
+
+    private void CreatePlayers()
+    {
+        for (int i = 0; i < controllersManager.controllersNumber.Length; i++)
+        {
+            Vector3 spawnPoint = areaManagerScript.GeneratePosition();
+
+            GameObject player = Instantiate(playerCharacter);
+            player.GetComponent<PlayerController>().joystickNumber = controllersManager.controllersNumber[i];
+
+            player.transform.position = spawnPoint;
+            player.transform.parent = characterContainers.transform;
         }
     }
 
