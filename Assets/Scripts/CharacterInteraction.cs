@@ -17,12 +17,11 @@ public class CharacterInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("TriggerEnter");
-        if (collision.tag == "Interactable")
+        if (collision.tag == AreaManager.INTERACTIF_AREA)
         {
             currentInteractable = collision.gameObject;
         }
-        if (collision.tag == "Character")
+        if (collision.tag == "Character" && gameObject.tag == GameManager.PLAYER)
         {
             currentInfectable.Add(collision.gameObject);
         }
@@ -30,12 +29,11 @@ public class CharacterInteraction : MonoBehaviour
 
     private void OnTriggerExit(Collider collision)
     {
-        Debug.Log("TriggerExit");
-        if (collision.tag == "Interactable")
+        if (collision.tag == AreaManager.INTERACTIF_AREA)
         {
             currentInteractable = null;
         }
-        if (collision.tag == "Character")
+        if (collision.tag == "Character" && gameObject.tag == GameManager.PLAYER)
         {
             currentInfectable.Remove(collision.gameObject);
         }
@@ -45,13 +43,12 @@ public class CharacterInteraction : MonoBehaviour
     {
         if (currentInteractable != null)
         {
-            if (currentInteractable.GetComponent<Interactable>().IsInfectedObject())
+            if (currentInteractable.GetComponent<Interactable>().IsInfectedObject() && gameObject.tag == GameManager.PLAYER)
             {
-                Debug.Log("I am infected!");
                 character.setInfected(true);
+                // ..........
             }
-            Debug.Log("Interaction success!");
-            // Set animation trigger
+            
             currentInteractable.GetComponent<Interactable>().Interaction(gameObject);
         }
     }

@@ -3,19 +3,22 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(CharacterInteraction))]
 
 public class AIMovement : MonoBehaviour
 {
     private NavMeshAgent navComponent;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private CharacterInteraction interactionScript;
 
     private float minDistForDestReached;
     private float maxWaitTime;
 
     private bool waitingForTarget;
+    private string lastDestinationType;
     private Vector3 previousPosition;
-
+    
     public AreaManager areaManager;
 
     void Awake()
@@ -28,7 +31,9 @@ public class AIMovement : MonoBehaviour
     {
         spriteRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
         animator = transform.GetChild(0).GetComponent<Animator>();
+        interactionScript = GetComponent<CharacterInteraction>();
 
+        lastDestinationType = AreaManager.WALKABLE_AREA;
         minDistForDestReached = 0.075f;
         maxWaitTime = 3.0f;
     }
@@ -49,18 +54,40 @@ public class AIMovement : MonoBehaviour
     {
         if (navComponent.remainingDistance <= minDistForDestReached && !waitingForTarget)
         {
-            waitingForTarget = true;
-            StartCoroutine(SelectNewTarget());
+            if (lastDestinationType == AreaManager.WALKABLE_AREA)
+            {
+                waitingForTarget = true;
+                StartCoroutine(WaitBeforeSelectingTarget());
+            }
+            else if (lastDestinationType == AreaManager.INTERACTIF_AREA)
+            {
+                interactionScript.interact();
+                lastDestinationType = "";
+            }
+            else
+            {
+                SelectNewTarget();
+            }
         }
 
-        Vector3 currentMovement = navComponent.velocity;        
+        Vector3 currentMovement = navComponent.velocity;
         Animate(currentMovement);
     }
 
-    private IEnumerator SelectNewTarget()
+    private IEnumerator WaitBeforeSelectingTarget()
     {
         yield return new WaitForSeconds(Random.Range(0.0f, maxWaitTime));
-        navComponent.SetDestination(areaManager.GeneratePosition());
+
+        SelectNewTarget();
+    }
+
+    private void SelectNewTarget()
+    {
+        ArrayList destinationInfo = areaManager.GenerateDestination();
+
+        navComponent.SetDestination((Vector3)destinationInfo[0]);
+        lastDestinationType = (string)destinationInfo[1];
+
         waitingForTarget = false;
     }
 
@@ -91,6 +118,4 @@ public class AIMovement : MonoBehaviour
             }
         }
     }
-
-
 }

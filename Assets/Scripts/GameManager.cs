@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public const int CHARACTER_SPEED = 5;
+
     public const string PLAYER = "Player";
     public const string BOT = "Bot";
 
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     private void InitializeVariables()
     {
-        numberBotCharacters = 1;
+        numberBotCharacters = 7;
         remainingTime = 180.0f;
     }
 
@@ -45,7 +46,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < numberBotCharacters; i++)
         {
-            Vector3 spawnPoint = areaManagerScript.GeneratePosition();
+            Vector3 spawnPoint = areaManagerScript.GenerateSpawnPoint();
 
             GameObject computer = Instantiate(computerCharacter);
             computer.GetComponent<AIMovement>().areaManager = areaManagerScript;
@@ -59,7 +60,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < controllersManager.controllersNumber.Length; i++)
         {
-            Vector3 spawnPoint = areaManagerScript.GeneratePosition();
+            Vector3 spawnPoint = areaManagerScript.GenerateSpawnPoint();
 
             GameObject player = Instantiate(playerCharacter);
             player.GetComponent<PlayerController>().joystickNumber = controllersManager.controllersNumber[i];

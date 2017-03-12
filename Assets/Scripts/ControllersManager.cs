@@ -10,7 +10,7 @@ public class ControllersManager : MonoBehaviour
     public void SearchForControllers()
     {        
         string[] controllers = Input.GetJoystickNames();
-        Debug.Log(controllers.Length);
+
         List<int> connectedControllers = new List<int>();
 
         for (int i = 0; i < controllers.Length; i++)

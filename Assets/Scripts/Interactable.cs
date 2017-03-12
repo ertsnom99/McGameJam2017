@@ -14,14 +14,6 @@ public class Interactable : MonoBehaviour {
     private bool isOccupied = false;
     private float interactionDuration = 2.0f;
 
-    void Start () {
-		
-	}
-	
-	void Update () {
-		
-	}
-
     public bool IsInfectedObject()
     {
         return isInfectedObject;
@@ -40,22 +32,25 @@ public class Interactable : MonoBehaviour {
             this.interactingCharacter = interactingCharacter;
             relatedObject.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
             interactingCharacter.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
+
+            if (interactingCharacter.tag == GameManager.PLAYER)
+            {
+                interactingCharacter.GetComponent<PlayerController>().enabled = false;
+            }
+            if (interactingCharacter.tag == GameManager.BOT)
+            {
+                //interactingCharacter.GetComponent<NavMeshAgent>().enabled = false;
+                interactingCharacter.GetComponent<AIMovement>().enabled = false;
+            }
+
             StartCoroutine(ManageOccupiedState(interactionDuration));
         }
     }
 
     IEnumerator ManageOccupiedState(float interactionDuration)
-    {        
-        if (interactingCharacter.tag == GameManager.PLAYER)
-        {
-            interactingCharacter.GetComponent<PlayerController>().enabled = false;
-        }
-        if (interactingCharacter.tag == GameManager.BOT)
-        {
-            interactingCharacter.GetComponent<NavMeshAgent>().enabled = false;
-            interactingCharacter.GetComponent<AIMovement>().enabled = false;
-        }
+    {   
         yield return new WaitForSeconds(interactionDuration);
+        Debug.Log("reactive");
         isOccupied = false;
         if (interactingCharacter.tag == GameManager.PLAYER)
         {
@@ -63,7 +58,7 @@ public class Interactable : MonoBehaviour {
         }
         if (interactingCharacter.tag == GameManager.BOT)
         {
-            interactingCharacter.GetComponent<NavMeshAgent>().enabled = true;
+            //interactingCharacter.GetComponent<NavMeshAgent>().enabled = true;
             interactingCharacter.GetComponent<AIMovement>().enabled = true;
         }
     }
