@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="Project" SchemaVersion="75" WwiseVersion="v2016.2.2" WwiseBuild="6022">
 	<ProjectInfo>
-		<Project Name="McGameJam2017_WwiseProject" ID="{9C859491-0F6A-406D-80A3-05318A326310}">
+		<Project Name="McGameJam2017_WwiseProject" ID="{1F56A383-E0D7-4BEC-8C79-2A4EB1F60364}">
 			<Platforms>
-				<Platform Name="Mac" ReferencePlatform="Mac" ID="{849E2B0E-5986-4B45-BE98-8E935D75E6C7}" />
-				<Platform Name="Windows" ReferencePlatform="Windows" ID="{2243CCF0-E93B-44A7-8257-78524108C66A}" />
+				<Platform Name="Mac" ReferencePlatform="Mac" ID="{DB42F398-F329-4D15-A173-1AAA56BF23E0}" />
+				<Platform Name="Windows" ReferencePlatform="Windows" ID="{1415465F-88F4-462A-B395-142F933CA975}" />
 			</Platforms>
 			<PropertyList>
 				<Property Name="DefaultLanguage" Type="int32" Value="12" />
@@ -20,7 +20,7 @@
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\Assets\StreamingAssets\GeneratedSoundBanks\Windows\" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
@@ -9536,7 +9536,7 @@
 					<Comment></Comment>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{AC96D8C5-4509-41D8-BADC-7B7976EE41F1}">
+							<Curve Name="" ID="{52794538-695C-412E-A1E4-4D45577CE6DE}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -9557,7 +9557,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{0843AFF9-8AE6-4A59-9360-30114364CC99}">
+							<Curve Name="" ID="{7FFB8036-A2BC-4BDB-A212-297FE1951C32}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9578,7 +9578,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{634962FF-28DD-4DCB-BD1B-24262E07086B}">
+							<Curve Name="" ID="{A6B3987F-D453-48D5-A448-C513DA14534E}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9599,7 +9599,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{7B3D1564-9A6B-4B28-BAEC-77A4BAD14567}">
+							<Curve Name="" ID="{85BD72E0-71F2-43FF-AA1C-AFB5C0E4C600}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -9620,7 +9620,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{D7A23B5A-49D7-4475-896D-48B74D2FDCFD}">
+							<Curve Name="" ID="{D350B16A-02BF-484C-9389-07F63A9E52BF}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9641,7 +9641,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{38D4CF53-F53B-4294-AB0E-04C6995517B2}">
+							<Curve Name="" ID="{73E88EE9-04F4-4BD6-AF54-7F1FE7E04DCE}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
