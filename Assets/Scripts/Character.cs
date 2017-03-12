@@ -66,13 +66,16 @@ public class Character : MonoBehaviour {
         }
 
         yield return new WaitForSeconds(animationDelay);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     public void Kill(GameObject killable)
     {
         gameObject.GetComponentInChildren<Animator>().SetTrigger(KILL);
-        killable.GetComponentInChildren<Character>().IsKilled();
+        if (killable.activeSelf && killable != null && killable.GetComponentInChildren<Character>() != null)
+        { 
+            killable.GetComponentInChildren<Character>().IsKilled();
+        }
     }
 
     public void IsKilled()

@@ -57,7 +57,7 @@ public class CharacterInteraction : MonoBehaviour
             Debug.Log("Sound  attack riggred");
             foreach (GameObject killable in currentKillable)
             {
-                  GetComponent<Character>().Kill(killable);             
+                  GetComponent<Character>().Kill(killable);            
             }
             currentKillable.Clear();
         }
@@ -69,7 +69,9 @@ public class CharacterInteraction : MonoBehaviour
         {
             if (currentInteractable.GetComponent<Interactable>().IsInfectedObject() && gameObject.tag == GameManager.PLAYER)
             {
+                Debug.Log("a character is infectious");
                 character.setInfectious(true);
+                GameObject.Find("InteractablesManager").GetComponent<InteractablesManager>().StartInfection();
                 currentInteractable.GetComponent<Interactable>().SetInfectedObject(false);
             }           
             currentInteractable.GetComponent<Interactable>().Interaction(gameObject);
@@ -78,10 +80,10 @@ public class CharacterInteraction : MonoBehaviour
 
     public void Infect()
     {
-        if (currentInfectable.Count != 0)
+        if (gameObject.GetComponent<Character>().IsInfectious && currentInfectable.Count != 0)
         {
-            Debug.Log("Infection success!");
-            Debug.Log("current Infectable : " + currentInfectable.Count);
+            //Debug.Log("Infection success!");
+            //Debug.Log("current Infectable : " + currentInfectable.Count);
             foreach (GameObject infectable in currentInfectable){
                 if (!infectable.GetComponent<Character>().IsInfected)
                 {

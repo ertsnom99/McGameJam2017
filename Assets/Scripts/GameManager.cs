@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,7 +22,13 @@ public class GameManager : MonoBehaviour
 
     private int numberBotCharacters;
 
+    private GameObject[] bots;
+    private GameObject[] players;
+
     private float remainingTime;
+    private bool gameEnded;
+
+    public GameObject gameFinishedUI;
 
     private void Awake()
     {
@@ -30,34 +37,43 @@ public class GameManager : MonoBehaviour
 
     private void InitializeVariables()
     {
-        numberBotCharacters = 7;
+        numberBotCharacters = 10;
         remainingTime = 180.0f;
+        gameEnded = false;
     }
-
+    
     private void Start()
     {
         CreateBots();
         controllersManager.SearchForControllers();
         CreatePlayers();
+        interactablesManager.InfectRandomObject();
         InitializeTimer();
     }
 
     private void CreateBots()
     {
+        bots = new GameObject[numberBotCharacters];
+
         for (int i = 0; i < numberBotCharacters; i++)
         {
             Vector3 spawnPoint = areaManagerScript.GenerateSpawnPoint();
 
             GameObject computer = Instantiate(computerCharacter);
             computer.GetComponent<AIMovement>().areaManager = areaManagerScript;
+            computer.GetComponent<AIMovement>().changePriority(i);
 
             computer.transform.position = spawnPoint;
             computer.transform.parent = characterContainers.transform;
+
+            bots[i] =computer;
         }
     }
 
     private void CreatePlayers()
     {
+        players = new GameObject[controllersManager.controllersNumber.Length];
+
         for (int i = 0; i < controllersManager.controllersNumber.Length; i++)
         {
             Vector3 spawnPoint = areaManagerScript.GenerateSpawnPoint();
@@ -67,6 +83,8 @@ public class GameManager : MonoBehaviour
 
             player.transform.position = spawnPoint;
             player.transform.parent = characterContainers.transform;
+
+            players[i] = player;
         }
     }
 
@@ -82,7 +100,15 @@ public class GameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(1.0f);
             remainingTime -= 1.0f;
-            UpdateTimer(remainingTime);
+
+            if (remainingTime <= 0)
+            {
+                EndGame("time out! it's a draw!");
+            }
+            else
+            {
+                UpdateTimer(remainingTime);
+            }
         }
     }
 
@@ -91,6 +117,79 @@ public class GameManager : MonoBehaviour
         int minutes = (int)Mathf.Floor(remainingTime / 60);
         int seconds = (int)Mathf.Floor(remainingTime % 60);
         timerText.text = minutes + ":" + (100 + seconds).ToString().Substring(1, 2);
+    }
+
+    private void Update()
+    {
+        CheckForWinner();
+    }
+
+    private void CheckForWinner()
+    {
+        if (!gameEnded && interactablesManager.InfectionStarted)
+        {
+            bool otherPlayersWin = true;
+            bool infectiousPlayerWins = true;
+            
+            foreach (GameObject player in players)
+            {
+                if (player.GetComponent<Character>().IsInfectious && !player.GetComponent<Character>().IsDead)
+                {
+                    otherPlayersWin = false;
+                }
+                else if (!player.GetComponent<Character>().IsInfectious && !player.GetComponent<Character>().IsInfected && !player.GetComponent<Character>().IsDead)
+                {
+                    infectiousPlayerWins = false;
+                }
+            }
+
+            foreach (GameObject bot in bots)
+            {
+                if (!bot.GetComponent<Character>().IsInfected && !bot.GetComponent<Character>().IsDead)
+                {
+                    infectiousPlayerWins = false;
+                }
+            }
+            
+            if (otherPlayersWin && infectiousPlayerWins)
+            {
+                EndGame("it's a draw!");
+            }
+            else if (otherPlayersWin)
+            {
+                EndGame("the other players win!");
+            }
+            else if (infectiousPlayerWins)
+            {
+                EndGame("the infectious player wins!");
+            }
+        }
+        else if (!gameEnded)
+        {
+            int countRemainingPlayers = players.Length;
+
+            foreach (GameObject player in players)
+            {
+                if (!player.activeSelf)
+                {
+                    countRemainingPlayers--;
+                }
+            }
+
+            if (countRemainingPlayers <= 1)
+            {
+                EndGame("every one lost... no one was infected!");
+            }
+        }
+    }
+
+    private void EndGame(string message)
+    {
+        gameEnded = true;
+
+        GameObject.Find("TitleText").GetComponent<Text>().text = message;
+
+        gameFinishedUI.GetComponent<Animator>().SetTrigger("GameFinished");
     }
 }
 
