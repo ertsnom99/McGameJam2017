@@ -54,8 +54,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1382620398275818}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.44683412, y: 0.47662297, z: 0.47662297}
+  m_LocalPosition: {x: 0, y: 0, z: 0.089}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4540892777672426}
   m_RootOrder: 0
@@ -66,9 +66,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1450023369364144}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.72, y: 0, z: 0.027}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.72, y: 1, z: 0.012}
+  m_LocalScale: {x: 1.2881998, y: 1.2881992, z: 1.2881992}
   m_Children:
   - {fileID: 4240531140463524}
   m_Father: {fileID: 0}
@@ -117,11 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5531fe0fd916ff4793f71cd41caab41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkableArea:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  areaManager: {fileID: 0}
 --- !u!143 &143312517047903718
 CharacterController:
   m_ObjectHideFlags: 1
@@ -190,7 +186,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b591c3ffe89283f439854d2cb2226e26, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eca542764b080204089e2af16040c5dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
