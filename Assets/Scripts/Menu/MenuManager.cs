@@ -15,16 +15,4 @@ public class MenuManager : MonoBehaviour {
 	void Update () {
 	
 	}
-
-    public void CreditsButtonClicked()
-    {
-        menuPanel.SetActive(false);
-        creditsPanel.SetActive(true);
-    }
-
-    public void BackCreditsButtonClicked()
-    {
-        menuPanel.SetActive(true);
-        creditsPanel.SetActive(false);
-    }
 }

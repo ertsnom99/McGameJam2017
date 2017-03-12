@@ -36,7 +36,7 @@ public class Interactable : MonoBehaviour {
             relatedObject.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
             if (relatedObject.name == "Light")
             {
-                GameObject.Find("FadeImage").GetComponent<Animator>().SetTrigger(FADE);
+                GameObject.Find("LightsOff").GetComponent<Animator>().SetTrigger(FADE);
                 StartCoroutine(ManageOccupiedState(fadeDuration, true));
                 StartCoroutine(ManageLightsDelay());
             } else
