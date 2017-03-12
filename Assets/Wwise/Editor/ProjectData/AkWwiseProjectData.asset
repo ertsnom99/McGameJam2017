@@ -12,11 +12,41 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
-  EventWwu: []
-  AuxBusWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  BankWwu: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}'
+    m_lastTimePsrt1: 849638493
+    m_lastTimePart2: -1999345431
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{5D36B2C6-846C-409B-9525-7308662070D8}'
+    m_lastTimePsrt1: 849598480
+    m_lastTimePart2: -1999345431
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{D80A7B8D-B23F-4AA7-BEF0-AD0F1E0700C2}'
+    m_lastTimePsrt1: 849748590
+    m_lastTimePart2: -1999345431
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A173DF6D-B7BC-44FC-8DDB-65796B05A851}'
+    m_lastTimePsrt1: 849668514
+    m_lastTimePart2: -1999345431
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{736205E2-6B6B-4546-930C-34FBF909AAF3}'
+    m_lastTimePsrt1: 849768719
+    m_lastTimePart2: -1999345431
+    List: []
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
