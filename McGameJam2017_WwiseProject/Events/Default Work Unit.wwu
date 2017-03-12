@@ -19,6 +19,83 @@
 						<Action Name="Stop All" ID="{032CF116-0B74-488B-85D3-C227D5458362}" ShortID="774452123" Type="Stop" Scope="All" Global="false"/>
 					</ChildrenList>
 				</Event>
+				<Event Name="CalmToPanic" ID="{445B53A4-6B23-4250-AA8C-6D7A5E450014}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{EBF8DF35-D1A9-46CC-B4CB-C048602E58ED}" ShortID="693586993" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="LesStates" ID="{E739EBC0-EE11-4DE1-B1E2-9561E7524207}"/>
+								<GroupItem Name="Panic" ID="{19C8AB78-C6DA-400F-AF83-CCB8F21F1EF1}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PanicToEnd" ID="{E39299F1-0E9B-4925-A99F-D48B1149A0B7}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{80B94DBA-CC1A-48C2-B811-ECA054664D15}" ShortID="891432785" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="LesStates" ID="{E739EBC0-EE11-4DE1-B1E2-9561E7524207}"/>
+								<GroupItem Name="GameOver" ID="{B008CD2D-C9C1-44BE-B73D-C66066863DA8}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CalmToEnd" ID="{2B958246-CA7B-4E14-A104-ACE653E3A2B8}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{C9403FA8-ABD9-476E-B715-7B0A6415FE4B}" ShortID="924662872" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="LesStates" ID="{E739EBC0-EE11-4DE1-B1E2-9561E7524207}"/>
+								<GroupItem Name="GameOver" ID="{B008CD2D-C9C1-44BE-B73D-C66066863DA8}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuMusic" ID="{CB23A479-DF47-4D00-8703-8D0A303AA371}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8B223418-8621-483E-B847-F87F1C9DA91F}" ShortID="297342545" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{C7E9444C-D771-4C71-A7AC-A8C0EA6A8036}" Global="false">
+									<ObjectRef Name="New Music Switch Container" ID="{3EBBA732-06D0-43B2-9120-0867406E672C}" WorkUnitID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Set State" ID="{A22957E3-8D1D-4766-88D6-C6B59A090179}" ShortID="257328707" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="LesStates" ID="{E739EBC0-EE11-4DE1-B1E2-9561E7524207}"/>
+								<GroupItem Name="Menu" ID="{7B71C3A4-A4FA-4FA4-9C15-2D20AE5F48A5}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuToCalm" ID="{3CD58B1D-F386-4A07-B4EE-67F158E957D3}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{C8ECB115-ACB1-449A-9C8A-B176440C839E}" ShortID="352923497" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="LesStates" ID="{E739EBC0-EE11-4DE1-B1E2-9561E7524207}"/>
+								<GroupItem Name="Calm" ID="{1E282DFF-6764-40B9-BF4A-DF37840AE891}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="EndToMenu" ID="{18107283-D1BC-4EC3-BF7A-87C372D35071}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{5D5EF91B-AAD2-4C78-A025-866CD4B7357E}" ShortID="724260983" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="LesStates" ID="{E739EBC0-EE11-4DE1-B1E2-9561E7524207}"/>
+								<GroupItem Name="Menu" ID="{7B71C3A4-A4FA-4FA4-9C15-2D20AE5F48A5}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="EndToCalm" ID="{8E235F24-242B-442D-B2B7-62304F26DCF5}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{EE9BC31C-A1E4-4D55-93D8-96ACBADD15DB}" ShortID="915817764" Type="SetState" Scope="All" Global="true">
+							<SetItemParam>
+								<Group Name="LesStates" ID="{E739EBC0-EE11-4DE1-B1E2-9561E7524207}"/>
+								<GroupItem Name="Calm" ID="{1E282DFF-6764-40B9-BF4A-DF37840AE891}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
