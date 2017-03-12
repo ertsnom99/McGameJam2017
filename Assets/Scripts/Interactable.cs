@@ -32,17 +32,19 @@ public class Interactable : MonoBehaviour {
         if (!isOccupied)
         {
             isOccupied = true;
+            
             relatedObject.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
             if (relatedObject.name == "Light")
             {
-                GameObject.Find("FadeImage").GetComponent<Animator>().SetTrigger(FADE);
+                GameObject.Find("LightsOff").GetComponent<Animator>().SetTrigger(FADE);
                 StartCoroutine(ManageOccupiedState(fadeDuration, true));
                 StartCoroutine(ManageLightsDelay());
             } else
-            {
-                this.interactingCharacter = interactingCharacter;               
+            {              
+                this.interactingCharacter = interactingCharacter;
+                interactingCharacter.GetComponentInChildren<SpriteRenderer>().enabled = false;
                 interactingCharacter.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
-
+               
                 if (interactingCharacter.tag == GameManager.PLAYER)
                 {
                     interactingCharacter.GetComponent<PlayerController>().enabled = false;
@@ -52,7 +54,7 @@ public class Interactable : MonoBehaviour {
                     interactingCharacter.GetComponent<AIMovement>().enabled = false;
                 }
 
-                StartCoroutine(ManageOccupiedState(interactionDuration, false));
+                StartCoroutine(ManageOccupiedState(interactionDuration, false));         
             }          
         }
     }
@@ -76,6 +78,7 @@ public class Interactable : MonoBehaviour {
             {
                 interactingCharacter.GetComponent<AIMovement>().enabled = true;
             }
+            interactingCharacter.GetComponentInChildren<SpriteRenderer>().enabled = true;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿//using XInputDotNetPure;
 using System.Collections.Generic;
 using UnityEngine;
 

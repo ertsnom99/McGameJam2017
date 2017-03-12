@@ -58,7 +58,7 @@ public class AreaManager : MonoBehaviour
             }
             else
             {
-                position = walkableAreas[i].gameObject.transform.position + new Vector3(Random.Range(0.0f, walkableAreas[i].size.x), 0, Random.Range(0.0f, -walkableAreas[i].size.z));
+                position = walkableAreas[i].gameObject.transform.position + new Vector3(Random.Range(0.0f, walkableAreas[i].size.x), 0.5f, Random.Range(0.0f, -walkableAreas[i].size.z));
             }
         }
         
@@ -74,7 +74,7 @@ public class AreaManager : MonoBehaviour
 
         float randomType = Random.Range(0.0f, 100.0f);
 
-        /*if (randomType > interactifChoiceChance)
+        if (randomType > interactifChoiceChance)
         {
             float selectedPositionInTotalArea = Random.Range(0.0f, totalWalkableArea);
             int i = 0;
@@ -96,13 +96,13 @@ public class AreaManager : MonoBehaviour
             areaType = WALKABLE_AREA;
         }
         else
-        {*/
+        {
             int selectedInteractifArea = (int)Mathf.Round(Random.Range(0, 6));
             int i = 0;
 
             position = interactifAreas[selectedInteractifArea].gameObject.transform.position + new Vector3(Random.Range(0.0f, interactifAreas[selectedInteractifArea].size.x), 0, Random.Range(0.0f, -interactifAreas[selectedInteractifArea].size.z));
             areaType = INTERACTIF_AREA;
-        //}
+        }
 
         positionInfo.Add(position);
         positionInfo.Add(areaType);

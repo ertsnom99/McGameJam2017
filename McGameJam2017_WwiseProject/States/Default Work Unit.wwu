@@ -9,6 +9,7 @@
 						<State Name="Calm" ID="{1E282DFF-6764-40B9-BF4A-DF37840AE891}"/>
 						<State Name="Panic" ID="{19C8AB78-C6DA-400F-AF83-CCB8F21F1EF1}"/>
 						<State Name="GameOver" ID="{B008CD2D-C9C1-44BE-B73D-C66066863DA8}"/>
+						<State Name="Menu" ID="{7B71C3A4-A4FA-4FA4-9C15-2D20AE5F48A5}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>

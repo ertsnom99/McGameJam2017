@@ -10,8 +10,40 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="CalmToEnd" ID="{2B958246-CA7B-4E14-A104-ACE653E3A2B8}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MenuToCalm" ID="{3CD58B1D-F386-4A07-B4EE-67F158E957D3}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Stop_Music" ID="{CD9C2728-BD2B-4AC4-996D-07A848310E42}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="CalmToPanic" ID="{445B53A4-6B23-4250-AA8C-6D7A5E450014}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PanicToEnd" ID="{E39299F1-0E9B-4925-A99F-D48B1149A0B7}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_AttackSound3" ID="{FE78E0B8-6612-4CAC-BD09-2EC11772F1C1}" WorkUnitID="{76C69B14-D3CA-4BCB-8F15-3B9A8EF34E7D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MenuMusic" ID="{CB23A479-DF47-4D00-8703-8D0A303AA371}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AttackSound" ID="{F2F0025D-FF80-4F18-84B4-49446D93D5C0}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SFX_Bird" ID="{C2CADB2A-F290-45CE-BBAB-41F970CFC1A3}" WorkUnitID="{76C69B14-D3CA-4BCB-8F15-3B9A8EF34E7D}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
