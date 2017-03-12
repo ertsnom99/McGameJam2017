@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3784626472" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="3776781431" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="3784971847" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="3784686522" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="3784641480" DateHigh="30579395"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="271394351" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="272024835" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="272174956" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="272124901" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="271994810" DateHigh="30579410"/>
 	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="122601425" DateHigh="30579388"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3776801442" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Effects\Default Work Unit.wwu" DateLow="3776921530" DateHigh="30579395"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="272154927" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Effects\Default Work Unit.wwu" DateLow="272084873" DateHigh="30579410"/>
 	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Effects\Factory Effects.wwu" DateLow="123426938" DateHigh="30579388"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Events\Default Work Unit.wwu" DateLow="3776721377" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="3776891505" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3776751410" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3784581655" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\McGameJam2017_WwiseProject.wproj" DateLow="62734216" DateHigh="30579396"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="3784951841" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="3784661494" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Presets\Default Work Unit.wwu" DateLow="3776901512" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Queries\Default Work Unit.wwu" DateLow="3776736386" DateHigh="30579395"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Events\Default Work Unit.wwu" DateLow="271414365" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="271494421" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="271594504" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="271374352" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\McGameJam2017_WwiseProject.wproj" DateLow="271324317" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="272064859" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="272104887" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Presets\Default Work Unit.wwu" DateLow="271584501" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Queries\Default Work Unit.wwu" DateLow="272044845" DateHigh="30579410"/>
 	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Queries\Factory Queries.wwu" DateLow="122531482" DateHigh="30579388"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="3776851489" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3776771420" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\States\Default Work Unit.wwu" DateLow="3776871495" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Switches\Default Work Unit.wwu" DateLow="3776821471" DateHigh="30579395"/>
-	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="3784606454" DateHigh="30579395"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="271544591" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="271614522" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\States\Default Work Unit.wwu" DateLow="271524462" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Switches\Default Work Unit.wwu" DateLow="271444386" DateHigh="30579410"/>
+	<ValidationCacheItem File="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="271464530" DateHigh="30579410"/>
 </ValidationCache>

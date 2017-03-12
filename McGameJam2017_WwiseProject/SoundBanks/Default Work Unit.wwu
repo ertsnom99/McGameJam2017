@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{B8E3F7D5-FC2E-4499-9EAE-8B191286BB44}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{736205E2-6B6B-4546-930C-34FBF909AAF3}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{B8E3F7D5-FC2E-4499-9EAE-8B191286BB44}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundBank Name="New_Soundbank" ID="{64DE3F1C-4B48-4A72-A66B-4EC19A6669BE}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Interactive Music Hierarchy" ID="{49FED366-B530-42A8-993B-924873AAB707}" WorkUnitID="{49FED366-B530-42A8-993B-924873AAB707}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" WorkUnitID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Default Work Unit" ID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="McGamejam - SomeoneOdd - theme1" ID="{6B43CD27-7A60-4F78-80E7-953587F043D0}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{736205E2-6B6B-4546-930C-34FBF909AAF3}" PersistMode="Standalone"/>
 	</SoundBanks>
 </WwiseDocument>

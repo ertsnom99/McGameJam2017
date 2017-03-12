@@ -12,43 +12,12 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
-  EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
-    ParentPhysicalPath: 
-    Guid: '{EF5CE766-C0CC-4567-8A84-C24BB584C495}'
-    m_lastTimePsrt1: 59978209
-    m_lastTimePart2: -1999345445
-    List: []
-  AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
-    ParentPhysicalPath: 
-    Guid: '{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}'
-    m_lastTimePsrt1: 67838487
-    m_lastTimePart2: -1999345445
-    List: []
-  StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
-    ParentPhysicalPath: 
-    Guid: '{B4DDA3D8-F393-4AEC-8136-53E00C707BB1}'
-    m_lastTimePsrt1: 60128327
-    m_lastTimePart2: -1999345445
-    List: []
-  SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
-    ParentPhysicalPath: 
-    Guid: '{103CF023-9BE6-4B76-9868-EB0B0681AB57}'
-    m_lastTimePsrt1: 60078303
-    m_lastTimePart2: -1999345445
-    List: []
-  BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
-    ParentPhysicalPath: 
-    Guid: '{B8E3F7D5-FC2E-4499-9EAE-8B191286BB44}'
-    m_lastTimePsrt1: 60108321
-    m_lastTimePart2: -1999345445
-    List: []
-  ExpandedItems:
-  - /McGameJam2017_WwiseProject
+  EventWwu: []
+  AuxBusWwu: []
+  StateWwu: []
+  SwitchWwu: []
+  BankWwu: []
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

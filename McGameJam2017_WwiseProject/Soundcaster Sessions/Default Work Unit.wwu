@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{DED5F201-3D0A-40D3-8C80-1ED198F380EF}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{1D141EF2-D982-4B75-A451-72A2C0B62A44}" SchemaVersion="75">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{DED5F201-3D0A-40D3-8C80-1ED198F380EF}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundcasterSession Name="Soundcast" ID="{05FAE37E-95E0-4A28-BEA1-A6DC18E583B0}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="GoodOlSwitch" ID="{ED9CD8E4-70B5-4679-9717-BDCF17871438}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="GameOver" ID="{37FB1735-25B8-46F3-B2BD-87D47EB2F163}"/>
-					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
-				</SoundcasterSession>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{1D141EF2-D982-4B75-A451-72A2C0B62A44}" PersistMode="Standalone"/>
 	</SoundcasterSessions>
 </WwiseDocument>
