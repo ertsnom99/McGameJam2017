@@ -50,6 +50,8 @@ public class Character : MonoBehaviour {
 
     IEnumerator Die()
     {
+        // MUSIC 
+        AkSoundEngine.PostEvent("DeathSound", GameObject.Find("Music"));
         IsDead = true;
         GetComponentInChildren<Animator>().SetTrigger(DIE);
         if (gameObject.tag == GameManager.BOT)

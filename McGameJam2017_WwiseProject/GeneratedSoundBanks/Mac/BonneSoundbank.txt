@@ -1,13 +1,41 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
-	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	114672780	Plant			\Default Work Unit\SFX_Events\Plant	
+	458346078	EndToMenu			\Default Work Unit\MusicEvents\EndToMenu	
+	580245626	Toilet			\Default Work Unit\SFX_Events\Toilet	
+	679636833	MenuMusic			\Default Work Unit\MusicEvents\MenuMusic	
+	1075461266	EndToCalm			\Default Work Unit\MusicEvents\EndToCalm	
+	1311594894	MenuToCalm			\Default Work Unit\MusicEvents\MenuToCalm	
+	1504742439	Lightswitch			\Default Work Unit\SFX_Events\Lightswitch	
+	1692470242	BirdNest			\Default Work Unit\SFX_Events\BirdNest	
+	2235898880	CoffeeMachine			\Default Work Unit\SFX_Events\CoffeeMachine	
+	2750337484	CalmToPanic			\Default Work Unit\MusicEvents\CalmToPanic	
+	2837384057	Stop_Music			\Default Work Unit\MusicEvents\Stop_Music	
+	2932040671	Play_Music			\Default Work Unit\MusicEvents\Play_Music	
+	3041594473	FirstInfectedDie			\Default Work Unit\SFX_Events\FirstInfectedDie	
+	3431057813	Trashcan			\Default Work Unit\SFX_Events\Trashcan	
+	3440270494	CalmToEnd			\Default Work Unit\MusicEvents\CalmToEnd	
+	3742375894	DeathSound			\Default Work Unit\SFX_Events\DeathSound	
+	3776488802	Workstation			\Default Work Unit\SFX_Events\Workstation	
+	3942174204	PanicToEnd			\Default Work Unit\MusicEvents\PanicToEnd	
+	4090411290	AttackSound			\Default Work Unit\SFX_Events\AttackSound	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	35760685	McGamejam - SomeoneOdd - theme4	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme4_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme4\McGamejam - SomeoneOdd - theme4		2646144
-	180427671	McGamejam - SomeoneOdd - theme1	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme1\McGamejam - SomeoneOdd - theme1		2976892
-	385930087	McGamejam - SomeoneOdd - Declencheur	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - Declencheur_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\McGamejam - SomeoneOdd - Declencheur\McGamejam - SomeoneOdd - Declencheur		1918540
-	441960924	McGamejam - SomeoneOdd - introLoop	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - introLoop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Calm\McGamejam - SomeoneOdd - introLoop\McGamejam - SomeoneOdd - introLoop		2646192
-	794621881	McGamejam - SomeoneOdd - End	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - End_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\GameOver\McGamejam - SomeoneOdd - End\McGamejam - SomeoneOdd - End		1984644
-	851138804	McGamejam - SomeoneOdd - theme3	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme3_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme3\McGamejam - SomeoneOdd - theme3		2976896
-	899591762	McGamejam - SomeoneOdd - theme2	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme2_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme2\McGamejam - SomeoneOdd - theme2		2976896
+	35760685	McGamejam - SomeoneOdd - theme4	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme4_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme4\McGamejam - SomeoneOdd - theme4		2646144
+	54142357	SFX_Workstation	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_Workstation_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Workstation		860140
+	180427671	McGamejam - SomeoneOdd - theme1	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme1\McGamejam - SomeoneOdd - theme1		2976892
+	272348478	SFX_Plant	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_Plant_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Plant		5896268
+	369850003	SFX_Trashcan	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_Trashcan_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Trashcan		231668
+	385930087	McGamejam - SomeoneOdd - Declencheur	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - Declencheur_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\McGamejam - SomeoneOdd - Declencheur\McGamejam - SomeoneOdd - Declencheur		1918540
+	441960924	McGamejam - SomeoneOdd - introLoop	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - introLoop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Calm\McGamejam - SomeoneOdd - introLoop\McGamejam - SomeoneOdd - introLoop		2646192
+	534985550	SFX_Bird	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_Bird_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Bird		529392
+	575328222	McGamejam - MenuLoop_good	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - MenuLoop_good_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Menu\McGamejam - MenuLoop_good\McGamejam - MenuLoop_good		2822544
+	637492826	SFX_CoffeeMachine	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_CoffeeMachine_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_CoffeeMachine		436732
+	666633511	SFX_Deathsound	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_Deathsound_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Deathsound		176724
+	751445585	SFX_Toilet	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_Toilet_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Toilet		860140
+	794621881	McGamejam - SomeoneOdd - End	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - End_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\GameOver\McGamejam - SomeoneOdd - End\McGamejam - SomeoneOdd - End		1984644
+	803990594	SFX_Lightswitch	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_Lightswitch_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Lightswitch		127940
+	851138804	McGamejam - SomeoneOdd - theme3	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme3_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme3\McGamejam - SomeoneOdd - theme3		2976896
+	899591762	McGamejam - SomeoneOdd - theme2	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme2_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme2\McGamejam - SomeoneOdd - theme2		2976896
+	992998981	SFX_AttackSound3	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_AttackSound3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_AttackSound3		176592
+	1035657228	SFX_FirstInfectedDie	C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\SFX_FirstInfectedDie_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_FirstInfectedDie		176544
 

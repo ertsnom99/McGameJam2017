@@ -52,6 +52,9 @@ public class CharacterInteraction : MonoBehaviour
         {
             Debug.Log("Kill success!");
             Debug.Log("current Killable : " + currentKillable.Count);
+            // MUSIC 
+            AkSoundEngine.PostEvent("AttackSound", GameObject.Find("Music"));
+            Debug.Log("Sound  attack riggred");
             foreach (GameObject killable in currentKillable)
             {
                   GetComponent<Character>().Kill(killable);             

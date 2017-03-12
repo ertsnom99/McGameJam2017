@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>/Users/Marc-Antoine_Giguere/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/McGameJam2017/McGameJam2017_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/Marc-Antoine_Giguere/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/McGameJam2017/McGameJam2017_WwiseProject/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/Marc-Antoine_Giguere/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/McGameJam2017/McGameJam2017_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/Marc-Antoine_Giguere/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/McGameJam2017/McGameJam2017_WwiseProject/GeneratedSoundBanks/Mac/</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\McGameJam2017_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,37 +16,98 @@
 			<ShortName>BonneSoundbank</ShortName>
 			<Path>BonneSoundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
-				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+				<Event Id="4090411290" Name="AttackSound" ObjectPath="\Events\Default Work Unit\SFX_Events\AttackSound"/>
+				<Event Id="1692470242" Name="BirdNest" ObjectPath="\Events\Default Work Unit\SFX_Events\BirdNest"/>
+				<Event Id="3440270494" Name="CalmToEnd" ObjectPath="\Events\Default Work Unit\MusicEvents\CalmToEnd" MaxAttenuation="0.000000"/>
+				<Event Id="2750337484" Name="CalmToPanic" ObjectPath="\Events\Default Work Unit\MusicEvents\CalmToPanic" MaxAttenuation="0.000000"/>
+				<Event Id="2235898880" Name="CoffeeMachine" ObjectPath="\Events\Default Work Unit\SFX_Events\CoffeeMachine"/>
+				<Event Id="3742375894" Name="DeathSound" ObjectPath="\Events\Default Work Unit\SFX_Events\DeathSound"/>
+				<Event Id="1075461266" Name="EndToCalm" ObjectPath="\Events\Default Work Unit\MusicEvents\EndToCalm" MaxAttenuation="0.000000"/>
+				<Event Id="458346078" Name="EndToMenu" ObjectPath="\Events\Default Work Unit\MusicEvents\EndToMenu" MaxAttenuation="0.000000"/>
+				<Event Id="3041594473" Name="FirstInfectedDie" ObjectPath="\Events\Default Work Unit\SFX_Events\FirstInfectedDie"/>
+				<Event Id="1504742439" Name="Lightswitch" ObjectPath="\Events\Default Work Unit\SFX_Events\Lightswitch"/>
+				<Event Id="679636833" Name="MenuMusic" ObjectPath="\Events\Default Work Unit\MusicEvents\MenuMusic"/>
+				<Event Id="1311594894" Name="MenuToCalm" ObjectPath="\Events\Default Work Unit\MusicEvents\MenuToCalm" MaxAttenuation="0.000000"/>
+				<Event Id="3942174204" Name="PanicToEnd" ObjectPath="\Events\Default Work Unit\MusicEvents\PanicToEnd" MaxAttenuation="0.000000"/>
+				<Event Id="114672780" Name="Plant" ObjectPath="\Events\Default Work Unit\SFX_Events\Plant"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\MusicEvents\Play_Music"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\MusicEvents\Stop_Music" MaxAttenuation="0.000000"/>
+				<Event Id="580245626" Name="Toilet" ObjectPath="\Events\Default Work Unit\SFX_Events\Toilet"/>
+				<Event Id="3431057813" Name="Trashcan" ObjectPath="\Events\Default Work Unit\SFX_Events\Trashcan"/>
+				<Event Id="3776488802" Name="Workstation" ObjectPath="\Events\Default Work Unit\SFX_Events\Workstation"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="35760685" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - theme4.wav</ShortName>
-					<Path>SFX/McGamejam - SomeoneOdd - theme4_4B8CC0C5.wem</Path>
+					<Path>SFX\McGamejam - SomeoneOdd - theme4_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="54142357" Language="SFX">
+					<ShortName>SFX_Workstation.wav</ShortName>
+					<Path>SFX\SFX_Workstation_9E69E797.wem</Path>
 				</File>
 				<File Id="180427671" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - theme1.wav</ShortName>
-					<Path>SFX/McGamejam - SomeoneOdd - theme1_4B8CC0C5.wem</Path>
+					<Path>SFX\McGamejam - SomeoneOdd - theme1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="272348478" Language="SFX">
+					<ShortName>SFX_Plant.wav</ShortName>
+					<Path>SFX\SFX_Plant_9E69E797.wem</Path>
+				</File>
+				<File Id="369850003" Language="SFX">
+					<ShortName>SFX_Trashcan.wav</ShortName>
+					<Path>SFX\SFX_Trashcan_9E69E797.wem</Path>
 				</File>
 				<File Id="385930087" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - Declencheur.wav</ShortName>
-					<Path>SFX/McGamejam - SomeoneOdd - Declencheur_4B8CC0C5.wem</Path>
+					<Path>SFX\McGamejam - SomeoneOdd - Declencheur_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="441960924" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - introLoop.wav</ShortName>
-					<Path>SFX/McGamejam - SomeoneOdd - introLoop_4B8CC0C5.wem</Path>
+					<Path>SFX\McGamejam - SomeoneOdd - introLoop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="534985550" Language="SFX">
+					<ShortName>SFX_Bird.wav</ShortName>
+					<Path>SFX\SFX_Bird_9E69E797.wem</Path>
+				</File>
+				<File Id="575328222" Language="SFX">
+					<ShortName>McGamejam - MenuLoop_good.wav</ShortName>
+					<Path>SFX\McGamejam - MenuLoop_good_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="637492826" Language="SFX">
+					<ShortName>SFX_CoffeeMachine.wav</ShortName>
+					<Path>SFX\SFX_CoffeeMachine_9E69E797.wem</Path>
+				</File>
+				<File Id="666633511" Language="SFX">
+					<ShortName>SFX_Deathsound.wav</ShortName>
+					<Path>SFX\SFX_Deathsound_9E69E797.wem</Path>
+				</File>
+				<File Id="751445585" Language="SFX">
+					<ShortName>SFX_Toilet.wav</ShortName>
+					<Path>SFX\SFX_Toilet_9E69E797.wem</Path>
 				</File>
 				<File Id="794621881" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - End.wav</ShortName>
-					<Path>SFX/McGamejam - SomeoneOdd - End_4B8CC0C5.wem</Path>
+					<Path>SFX\McGamejam - SomeoneOdd - End_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="803990594" Language="SFX">
+					<ShortName>SFX_Lightswitch.wav</ShortName>
+					<Path>SFX\SFX_Lightswitch_9E69E797.wem</Path>
 				</File>
 				<File Id="851138804" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - theme3.wav</ShortName>
-					<Path>SFX/McGamejam - SomeoneOdd - theme3_4B8CC0C5.wem</Path>
+					<Path>SFX\McGamejam - SomeoneOdd - theme3_4B8CC0C5.wem</Path>
 				</File>
 				<File Id="899591762" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - theme2.wav</ShortName>
-					<Path>SFX/McGamejam - SomeoneOdd - theme2_4B8CC0C5.wem</Path>
+					<Path>SFX\McGamejam - SomeoneOdd - theme2_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="992998981" Language="SFX">
+					<ShortName>SFX_AttackSound3.wav</ShortName>
+					<Path>SFX\SFX_AttackSound3_9E69E797.wem</Path>
+				</File>
+				<File Id="1035657228" Language="SFX">
+					<ShortName>SFX_FirstInfectedDie.wav</ShortName>
+					<Path>SFX\SFX_FirstInfectedDie_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
