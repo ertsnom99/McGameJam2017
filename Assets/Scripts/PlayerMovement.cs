@@ -23,10 +23,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void moveCharacter(Hashtable inputs)
     {
-        Vector3 movement = new Vector3((float)inputs[PlayerController.HORIZONTAL_INPUT], 0, (float)inputs[PlayerController.VERTICAL_INPUT]);
+        Vector3 movement = new Vector3((float)inputs[PlayerController.HORIZONTAL_INPUT], -1.0f, (float)inputs[PlayerController.VERTICAL_INPUT]);
 		
-		Vector3 movementNormalized = movement.normalized;
-        movement = movementNormalized * GameManager.CHARACTER_SPEED * Time.deltaTime;
+		Vector3 movementNormalized = new Vector3(movement.x, 0, movement.z).normalized;
+        movement = movement * GameManager.CHARACTER_SPEED * Time.deltaTime;
 
         characterController.Move(movement);
 

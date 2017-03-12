@@ -35,7 +35,7 @@ public class AIMovement : MonoBehaviour
 
         lastDestinationType = AreaManager.WALKABLE_AREA;
         minDistForDestReached = 0.075f;
-        maxWaitTime = 3.0f;
+        maxWaitTime = 5.0f;
     }
 
     void Start()
@@ -48,6 +48,11 @@ public class AIMovement : MonoBehaviour
         navComponent = GetComponent<NavMeshAgent>();
 
         navComponent.speed = GameManager.CHARACTER_SPEED;
+    }
+    
+    public void changePriority(int priority)
+    {
+        navComponent.avoidancePriority = priority;
     }
 
     void Update()
@@ -78,7 +83,7 @@ public class AIMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(0.0f, maxWaitTime));
 
-        SelectNewTarget();
+        if (navComponent.enabled == true) SelectNewTarget();
     }
 
     private void SelectNewTarget()

@@ -2997,6 +2997,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1127820338 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114397917243115848, guid: 82016573b93b655429d4a07a67c230b0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1045571457}
+  m_Script: {fileID: 11500000, guid: f258610e9f2e22d428c6391b839e204b, type: 3}
 --- !u!1 &1130752972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4251,7 +4257,8 @@ MonoBehaviour:
     type: 2}
   characterContainers: {fileID: 38945023}
   controllersManager: {fileID: 1116508626}
-  interactablesManager: {fileID: 0}
+  interactablesManager: {fileID: 1127820338}
+  gameFinishedUI: {fileID: 1148670135}
 --- !u!4 &1565744355
 Transform:
   m_ObjectHideFlags: 0
