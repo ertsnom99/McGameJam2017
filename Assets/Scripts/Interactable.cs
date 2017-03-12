@@ -32,6 +32,7 @@ public class Interactable : MonoBehaviour {
         if (!isOccupied)
         {
             isOccupied = true;
+            
             relatedObject.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
             if (relatedObject.name == "Light")
             {
@@ -39,10 +40,16 @@ public class Interactable : MonoBehaviour {
                 StartCoroutine(ManageOccupiedState(fadeDuration, true));
                 StartCoroutine(ManageLightsDelay());
             } else
-            {
-                this.interactingCharacter = interactingCharacter;               
-                interactingCharacter.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
-
+            {              
+                this.interactingCharacter = interactingCharacter;
+                if (relatedObject.name == "Balcony" || relatedObject.name == "Garden")
+                {
+                    interactingCharacter.GetComponentInChildren<SpriteRenderer>().enabled = false;
+                }
+                else
+                {
+                    interactingCharacter.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
+                }
                 if (interactingCharacter.tag == GameManager.PLAYER)
                 {
                     interactingCharacter.GetComponent<PlayerController>().enabled = false;
@@ -52,7 +59,7 @@ public class Interactable : MonoBehaviour {
                     interactingCharacter.GetComponent<AIMovement>().enabled = false;
                 }
 
-                StartCoroutine(ManageOccupiedState(interactionDuration, false));
+                StartCoroutine(ManageOccupiedState(interactionDuration, false));         
             }          
         }
     }
@@ -77,5 +84,7 @@ public class Interactable : MonoBehaviour {
                 interactingCharacter.GetComponent<AIMovement>().enabled = true;
             }
         }
+        interactingCharacter.GetComponentInChildren<SpriteRenderer>().enabled = true;
+
     }
 }
