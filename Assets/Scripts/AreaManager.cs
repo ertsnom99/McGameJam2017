@@ -7,7 +7,8 @@ public class AreaManager : MonoBehaviour
 
     private float[] individualWalkableAreas;
 
-    private BoxCollider[] walkableAreas;
+    public BoxCollider[] walkableAreas;
+    public BoxCollider[] interactifAreas;
 
     private void Awake()
     {
@@ -16,21 +17,9 @@ public class AreaManager : MonoBehaviour
 
     private void InitializeAreas()
     {
-        ArrayList tempWalkableAreas = new ArrayList();
-
-        int i = 0;
-
-        foreach (Transform child in transform)
-        {
-            tempWalkableAreas.Add(child.GetComponent<BoxCollider>());
-            i++;
-        }
-
-        walkableAreas = (BoxCollider[])tempWalkableAreas.ToArray(typeof(BoxCollider));
-        
         individualWalkableAreas = new float[walkableAreas.Length];
 
-        i = 0;
+        int i = 0;
 
         foreach (BoxCollider walkableArea in walkableAreas)
         {
