@@ -66,7 +66,6 @@ public class CharacterInteraction : MonoBehaviour
         {
             if (currentInteractable.GetComponent<Interactable>().IsInfectedObject() && gameObject.tag == GameManager.PLAYER)
             {
-                Debug.Log("I found the infected object");
                 character.setInfectious(true);
                 currentInteractable.GetComponent<Interactable>().SetInfectedObject(false);
             }           

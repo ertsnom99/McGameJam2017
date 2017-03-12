@@ -6,13 +6,16 @@ using UnityEngine.AI;
 
 public class Interactable : MonoBehaviour {
 
-    private const string ANIMATE_INTERACTION = "Animate";
     public GameObject relatedObject;
 
+    private const string ANIMATE_INTERACTION = "Animate";
+    private const string FADE = "Fade";
     private GameObject interactingCharacter;
     private bool isInfectedObject = false;
     private bool isOccupied = false;
     private float interactionDuration = 2.0f;
+    private float fadeDuration = 4.0f;
+    private float lightsDelay = 15.0f;
 
     public bool IsInfectedObject()
     {
@@ -21,7 +24,6 @@ public class Interactable : MonoBehaviour {
 
     public void SetInfectedObject(bool b)
     {
-        Debug.Log("HERE");
         isInfectedObject = b;
     }
 
@@ -30,35 +32,50 @@ public class Interactable : MonoBehaviour {
         if (!isOccupied)
         {
             isOccupied = true;
-            this.interactingCharacter = interactingCharacter;
             relatedObject.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
-            interactingCharacter.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
-
-            if (interactingCharacter.tag == GameManager.PLAYER)
+            if (relatedObject.name == "Light")
             {
-                interactingCharacter.GetComponent<PlayerController>().enabled = false;
-            }
-            if (interactingCharacter.tag == GameManager.BOT)
+                GameObject.Find("FadeImage").GetComponent<Animator>().SetTrigger(FADE);
+                StartCoroutine(ManageOccupiedState(fadeDuration, true));
+                StartCoroutine(ManageLightsDelay());
+            } else
             {
-                interactingCharacter.GetComponent<AIMovement>().enabled = false;
-            }
+                this.interactingCharacter = interactingCharacter;               
+                interactingCharacter.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
 
-            StartCoroutine(ManageOccupiedState(interactionDuration));
+                if (interactingCharacter.tag == GameManager.PLAYER)
+                {
+                    interactingCharacter.GetComponent<PlayerController>().enabled = false;
+                }
+                if (interactingCharacter.tag == GameManager.BOT)
+                {
+                    interactingCharacter.GetComponent<AIMovement>().enabled = false;
+                }
+
+                StartCoroutine(ManageOccupiedState(interactionDuration, false));
+            }          
         }
     }
 
-    IEnumerator ManageOccupiedState(float interactionDuration)
+    public IEnumerator ManageLightsDelay()
+    {
+        yield return new WaitForSeconds(lightsDelay);
+        isOccupied = false;
+    }
+
+    IEnumerator ManageOccupiedState(float interactionDuration, bool lights)
     {   
         yield return new WaitForSeconds(interactionDuration);
-        Debug.Log("reactive");
         isOccupied = false;
-        if (interactingCharacter.tag == GameManager.PLAYER)
-        {
-            interactingCharacter.GetComponent<PlayerController>().enabled = true;
-        }
-        if (interactingCharacter.tag == GameManager.BOT)
-        {
-            interactingCharacter.GetComponent<AIMovement>().enabled = true;
+        if (!lights) {
+            if (interactingCharacter.tag == GameManager.PLAYER)
+            {
+                interactingCharacter.GetComponent<PlayerController>().enabled = true;
+            }
+            if (interactingCharacter.tag == GameManager.BOT)
+            {
+                interactingCharacter.GetComponent<AIMovement>().enabled = true;
+            }
         }
     }
 }
