@@ -21,6 +21,7 @@ public class Interactable : MonoBehaviour {
 
     public void SetInfectedObject(bool b)
     {
+        Debug.Log("HERE");
         isInfectedObject = b;
     }
 
@@ -39,7 +40,6 @@ public class Interactable : MonoBehaviour {
             }
             if (interactingCharacter.tag == GameManager.BOT)
             {
-                //interactingCharacter.GetComponent<NavMeshAgent>().enabled = false;
                 interactingCharacter.GetComponent<AIMovement>().enabled = false;
             }
 
@@ -58,7 +58,6 @@ public class Interactable : MonoBehaviour {
         }
         if (interactingCharacter.tag == GameManager.BOT)
         {
-            //interactingCharacter.GetComponent<NavMeshAgent>().enabled = true;
             interactingCharacter.GetComponent<AIMovement>().enabled = true;
         }
     }

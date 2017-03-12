@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     public const string VERTICAL_INPUT = "VInput";
     public const string HORIZONTAL_INPUT = "HInput";
     public const string ACTION_INPUT = "AInput";
+    public const string KILL_INPUT = "KInput";
     public const string INFECT_INPUT = "IInput";
 
     public int joystickNumber;
@@ -32,11 +33,15 @@ public class PlayerController : MonoBehaviour {
         movementScript.moveCharacter(inputs);
         if ((bool)inputs[ACTION_INPUT]) // interact with object
         {
-            interactionScript.interact();
+            interactionScript.Interact();
         }
         if ((bool)inputs[INFECT_INPUT])
         {
-            interactionScript.infect();
+            interactionScript.Infect();
+        }
+        if ((bool)inputs[KILL_INPUT])
+        {
+            interactionScript.Kill();
         }
     }
 
@@ -47,6 +52,7 @@ public class PlayerController : MonoBehaviour {
         ht.Add(VERTICAL_INPUT, Input.GetAxis("Joy" + joystickNumber + "Vertical"));
         ht.Add(HORIZONTAL_INPUT, Input.GetAxis("Joy" + joystickNumber + "Horizontal"));
         ht.Add(ACTION_INPUT, Input.GetButtonDown("Joy" + joystickNumber + "Fire1"));
+        ht.Add(KILL_INPUT, Input.GetButtonDown("Joy" + joystickNumber + "Fire2"));
         ht.Add(INFECT_INPUT, Input.GetButtonDown("Joy" + joystickNumber + "Fire3"));    
         
         return ht;

@@ -52,7 +52,7 @@ public class AIMovement : MonoBehaviour
 
     void Update()
     {
-        if (navComponent.remainingDistance <= minDistForDestReached && !waitingForTarget)
+        if (navComponent.enabled == true && navComponent.remainingDistance <= minDistForDestReached && !waitingForTarget)
         {
             if (lastDestinationType == AreaManager.WALKABLE_AREA)
             {
@@ -61,7 +61,7 @@ public class AIMovement : MonoBehaviour
             }
             else if (lastDestinationType == AreaManager.INTERACTIF_AREA)
             {
-                interactionScript.interact();
+                interactionScript.Interact();
                 lastDestinationType = "";
             }
             else
