@@ -4,6 +4,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public const int CHARACTER_SPEED = 5;
+    public const string PLAYER = "Player";
+    public const string BOT = "Bot";
 
     public TextMesh timerText;
 
@@ -14,8 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject characterContainers;
 
     public ControllersManager controllersManager;
-
-    public GameObject[] infectiveObjects;
+    public InteractablesManager interactablesManager;
 
     private int numberBotCharacters;
 

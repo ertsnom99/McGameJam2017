@@ -66,7 +66,6 @@ public class AIMovement : MonoBehaviour
 
     private void Animate(Vector3 movement)
     {
-        Debug.Log("current Movement : " + movement);
         float pi = Mathf.PI;
 
         if (movement.magnitude < 0.1f)
