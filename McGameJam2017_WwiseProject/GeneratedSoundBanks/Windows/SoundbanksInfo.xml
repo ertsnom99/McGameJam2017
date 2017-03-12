@@ -21,8 +21,8 @@
 			<ShortName>New_Soundbank</ShortName>
 			<Path>New_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3050945240" Name="New_Event" ObjectPath="\Events\Default Work Unit\New_Event" MaxAttenuation="0.000000"/>
 				<Event Id="540993415" Name="Start_Music" ObjectPath="\Events\Default Work Unit\Start_Music"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="180608282" Language="SFX">

@@ -1,6 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	540993415	Start_Music			\Default Work Unit\Start_Music	
-	3050945240	New_Event			\Default Work Unit\New_Event	
+	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
