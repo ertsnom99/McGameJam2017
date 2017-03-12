@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 58129478982548742}
   m_Layer: 0
   m_Name: Garden
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,8 +39,8 @@ GameObject:
   - component: {fileID: 212139463536296886}
   - component: {fileID: 95152619440354344}
   m_Layer: 0
-  m_Name: New Sprite
-  m_TagString: Untagged
+  m_Name: Sprite
+  m_TagString: Sprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

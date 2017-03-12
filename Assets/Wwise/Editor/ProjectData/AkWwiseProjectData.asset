@@ -15,38 +15,96 @@ MonoBehaviour:
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{7F64443D-B872-4A34-B8BB-322821CE4C16}'
-    m_lastTimePsrt1: -486363324
-    m_lastTimePart2: -1999345423
-    List: []
+    Guid: '{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}'
+    m_lastTimePsrt1: 971381975
+    m_lastTimePart2: -1999345412
+    List:
+    - Name: Play_Music
+      Path: Default Work Unit\Play_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Music
+        ObjectType: 3
+      ID: -1362926625
+      Guid: d61f6e907cab8e45895f8ee79b75bdfa
+      maxAttenuation: 0
+    - Name: Stop_Music
+      Path: Default Work Unit\Stop_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Music
+        ObjectType: 3
+      ID: -1457583239
+      Guid: 28279ccd2bbdc44a996d07a848310e42
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{5D27B68C-B127-42BB-8347-2EEC67F5E0F4}'
-    m_lastTimePsrt1: -486278124
-    m_lastTimePart2: -1999345423
+    Guid: '{5D36B2C6-846C-409B-9525-7308662070D8}'
+    m_lastTimePsrt1: 1922726414
+    m_lastTimePart2: -1999345418
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{D4835DE5-65D2-48A6-AD97-B69F035C526F}'
-    m_lastTimePsrt1: -486171173
-    m_lastTimePart2: -1999345423
-    List: []
+    Guid: '{D80A7B8D-B23F-4AA7-BEF0-AD0F1E0700C2}'
+    m_lastTimePsrt1: 989355417
+    m_lastTimePart2: -1999345412
+    List:
+    - Name: LesStates
+      Path: Default Work Unit\LesStates
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LesStates
+        ObjectType: 9
+      ID: 958147381
+      Guid: c0eb39e711eee14db1e29561e7524207
+      values:
+      - Calm
+      - GameOver
+      - None
+      - Panic
+      ValueIcons:
+      - ElementName: Calm
+        ObjectType: 8
+      - ElementName: GameOver
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Panic
+        ObjectType: 8
+      valueIDs: f499b6dfa568daf7db3ba32c068f93ba
+      ValueGuids:
+      - bytes: ff2d281e6467b940bf4adf37840ae891
+      - bytes: 2dcd08b0c1c9be44b73dc66066863da8
+      - bytes: 75e7c0be641a404caea7adf0a51417a2
+      - bytes: 78abc819dac60f40af83ccb8f21f1ef1
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{4585FBF0-4308-422F-B522-EE78B1918131}'
-    m_lastTimePsrt1: -486303278
-    m_lastTimePart2: -1999345423
+    Guid: '{A173DF6D-B7BC-44FC-8DDB-65796B05A851}'
+    m_lastTimePsrt1: 1925189781
+    m_lastTimePart2: -1999345418
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{0D687DA7-8670-4E7F-BE3B-C1B4D67E6BFA}'
-    m_lastTimePsrt1: -486061091
-    m_lastTimePart2: -1999345423
-    List: []
+    Guid: '{736205E2-6B6B-4546-930C-34FBF909AAF3}'
+    m_lastTimePsrt1: 989280412
+    m_lastTimePart2: -1999345412
+    List:
+    - Name: BonneSoundbank
+      Path: Default Work Unit\BonneSoundbank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BonneSoundbank
+        ObjectType: 7
+      ID: 1141655420
+      Guid: 1829323850a2564ea40fb37c755bf2dd
   ExpandedItems:
   - /McGameJam2017_WwiseProject
   m_lastPopulateTimePsrt1: 0

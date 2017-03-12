@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Interactable
   - Character
+  - Sprite
+  - InteractifArea
+  - WalkableArea
+  - Infectable
+  - Bot
   layers:
   - Default
   - TransparentFX
