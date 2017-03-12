@@ -20,6 +20,10 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\New_Soundbank</ObjectPath>
 			<ShortName>New_Soundbank</ShortName>
 			<Path>New_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3050945240" Name="New_Event" ObjectPath="\Events\Default Work Unit\New_Event" MaxAttenuation="0.000000"/>
+				<Event Id="540993415" Name="Start_Music" ObjectPath="\Events\Default Work Unit\Start_Music"/>
+			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="180608282" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - Declencheur.wav</ShortName>
