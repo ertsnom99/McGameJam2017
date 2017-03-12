@@ -185,6 +185,11 @@ public class GameManager : MonoBehaviour
 
     private void EndGame(string message)
     {
+
+        //Music
+        AkSoundEngine.PostEvent("PanicToEnd", GameObject.Find("Music"));
+        AkSoundEngine.PostEvent("CalmToEnd", GameObject.Find("Music"));
+
         gameEnded = true;
 
         GameObject.Find("TitleText").GetComponent<Text>().text = message;

@@ -10,6 +10,7 @@ public class Character : MonoBehaviour {
 
     private const string DIE = "Die";
     private const string KILL = "Kill";
+    private const int killDelay = 5;
     public bool IsInfectious { private set; get; }
     public bool IsInfected { private set; get; }
     public bool IsDead { private set; get; }

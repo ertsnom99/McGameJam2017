@@ -9,12 +9,18 @@ public class CharacterInteraction : MonoBehaviour
     private List<GameObject> currentInfectable;
     private List<GameObject> currentKillable;
     private Character character;
+    private float killDelay = 5.0f;
 
     private void Awake()
     {
         currentInfectable = new List<GameObject>();
         currentKillable = new List<GameObject>();
         character = GetComponent<Character>();
+    }
+
+    private void Update()
+    {
+        killDelay -= Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -48,8 +54,9 @@ public class CharacterInteraction : MonoBehaviour
 
     public void Kill()
     {
-        if (currentKillable.Count != 0)
+        if (currentKillable.Count != 0 && killDelay < 0)
         {
+            killDelay = 5.0f;
             Debug.Log("Kill success!");
             Debug.Log("current Killable : " + currentKillable.Count);
             // MUSIC 
