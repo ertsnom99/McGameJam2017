@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     private void InitializeVariables()
     {
-        numberBotCharacters = 20;
+        numberBotCharacters = 1;
         remainingTime = 180.0f;
     }
 

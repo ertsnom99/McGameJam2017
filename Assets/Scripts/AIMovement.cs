@@ -52,9 +52,9 @@ public class AIMovement : MonoBehaviour
             waitingForTarget = true;
             StartCoroutine(SelectNewTarget());
         }
-        Vector3 currentMovement = transform.position - previousPosition;
-        previousPosition = transform.position;
-        //Animate(currentMovement);
+
+        Vector3 currentMovement = navComponent.velocity;        
+        Animate(currentMovement);
     }
 
     private IEnumerator SelectNewTarget()
@@ -62,6 +62,35 @@ public class AIMovement : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(0.0f, maxWaitTime));
         navComponent.SetDestination(areaManager.GeneratePosition());
         waitingForTarget = false;
+    }
+
+    private void Animate(Vector3 movement)
+    {
+        Debug.Log("current Movement : " + movement);
+        float pi = Mathf.PI;
+
+        if (movement.magnitude < 0.1f)
+        {
+            animator.SetTrigger("idle");
+        }
+        else if (movement.x < Mathf.Cos(pi / 4) && movement.x > Mathf.Cos(3 * pi / 4) && movement.z > Mathf.Sin(pi / 4))
+        {
+            animator.SetTrigger("moveVerticalUp");
+        }
+        else if (movement.x > Mathf.Cos(-3 * pi / 4) && movement.x < Mathf.Cos(-pi / 4) && movement.z < Mathf.Sin(-pi / 4))
+        {
+            animator.SetTrigger("moveVerticalDown");
+        }
+        else if ((movement.x > Mathf.Cos(pi / 4) && movement.z < Mathf.Sin(pi / 4) && movement.z > Mathf.Sin(-pi / 4)) ||
+            (movement.x < Mathf.Cos(3 * pi / 4) && movement.z < Mathf.Sin(pi / 4) && movement.z > Mathf.Sin(-pi / 4)))
+        {
+            animator.SetTrigger("moveHorizontal");
+            bool flipSprite = (spriteRenderer.flipX ? (movement.x > 0.1f) : (movement.x < 0.1f));
+            if (flipSprite)
+            {
+                spriteRenderer.flipX = !spriteRenderer.flipX;
+            }
+        }
     }
 
 
