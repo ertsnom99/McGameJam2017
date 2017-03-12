@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D0B5BE30-39E8-417E-A1C8-AB6F74B99327}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{736205E2-6B6B-4546-930C-34FBF909AAF3}" SchemaVersion="75">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{D0B5BE30-39E8-417E-A1C8-AB6F74B99327}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{736205E2-6B6B-4546-930C-34FBF909AAF3}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="BonneSoundbank" ID="{38322918-A250-4E56-A40F-B37C755BF2DD}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Calm" ID="{678A3691-337A-416B-9720-63E9EBB1BA5C}" WorkUnitID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}" WorkUnitID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="New Music Switch Container" ID="{3EBBA732-06D0-43B2-9120-0867406E672C}" WorkUnitID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Music" ID="{906E1FD6-AB7C-458E-895F-8EE79B75BDFA}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="GameOver" ID="{9319BEB5-05DF-46A5-AA01-19832570DE12}" WorkUnitID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Music" ID="{CD9C2728-BD2B-4AC4-996D-07A848310E42}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Panic" ID="{CC4BBC97-EF2E-4D35-B291-64F44F97386F}" WorkUnitID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="McGamejam - SomeoneOdd - Declencheur" ID="{DC865252-A2E2-4E11-9F93-AAC7241BEAC0}" WorkUnitID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

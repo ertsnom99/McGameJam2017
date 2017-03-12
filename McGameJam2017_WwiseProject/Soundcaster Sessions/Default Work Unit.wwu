@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{CDD71EBE-7E3F-451D-B892-50CA6AC67E7F}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{1D141EF2-D982-4B75-A451-72A2C0B62A44}" SchemaVersion="75">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{CDD71EBE-7E3F-451D-B892-50CA6AC67E7F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1D141EF2-D982-4B75-A451-72A2C0B62A44}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="CastSound" ID="{6B8D711C-2AD1-40AA-BA03-2860E6A75ED7}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{906E1FD6-AB7C-458E-895F-8EE79B75BDFA}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Music" ID="{CD9C2728-BD2B-4AC4-996D-07A848310E42}" WorkUnitID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Panic" ID="{19C8AB78-C6DA-400F-AF83-CCB8F21F1EF1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

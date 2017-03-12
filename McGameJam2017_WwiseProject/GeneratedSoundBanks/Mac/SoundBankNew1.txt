@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	83252805	McGamejam - SomeoneOdd - theme4	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme4_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\ThatSwitchMan\Panic\McGamejam - SomeoneOdd - theme4\McGamejam - SomeoneOdd - theme4		2646144
+	376442238	McGamejam - SomeoneOdd - End	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - End_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\ThatSwitchMan\McGamejam - SomeoneOdd - End\McGamejam - SomeoneOdd - End		1984644
+	489930508	McGamejam - SomeoneOdd - theme1	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\ThatSwitchMan\Panic\McGamejam - SomeoneOdd - theme1\McGamejam - SomeoneOdd - theme1		2976892
+	595420822	McGamejam - SomeoneOdd - theme2	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme2_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\ThatSwitchMan\Panic\McGamejam - SomeoneOdd - theme2\McGamejam - SomeoneOdd - theme2		2976896
+	645066073	McGamejam - SomeoneOdd - theme3	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - theme3_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\ThatSwitchMan\Panic\McGamejam - SomeoneOdd - theme3\McGamejam - SomeoneOdd - theme3		2976896
+	756352357	McGamejam - SomeoneOdd - introLoop	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - introLoop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\ThatSwitchMan\Calm\McGamejam - SomeoneOdd - introLoop\McGamejam - SomeoneOdd - introLoop		2646192
+	875509881	McGamejam - SomeoneOdd - Declencheur	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Mac\SFX\McGamejam - SomeoneOdd - Declencheur_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\ThatSwitchMan\McGamejam - SomeoneOdd - Declencheur\McGamejam - SomeoneOdd - Declencheur		1918540
+

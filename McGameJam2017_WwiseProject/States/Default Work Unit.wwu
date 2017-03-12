@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9D36CB77-562C-4E6F-B83C-3E27237B78DD}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{D80A7B8D-B23F-4AA7-BEF0-AD0F1E0700C2}" SchemaVersion="75">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{9D36CB77-562C-4E6F-B83C-3E27237B78DD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D80A7B8D-B23F-4AA7-BEF0-AD0F1E0700C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="LesStates" ID="{E739EBC0-EE11-4DE1-B1E2-9561E7524207}">
+					<ChildrenList>
+						<State Name="None" ID="{BEC0E775-1A64-4C40-AEA7-ADF0A51417A2}"/>
+						<State Name="Calm" ID="{1E282DFF-6764-40B9-BF4A-DF37840AE891}"/>
+						<State Name="Panic" ID="{19C8AB78-C6DA-400F-AF83-CCB8F21F1EF1}"/>
+						<State Name="GameOver" ID="{B008CD2D-C9C1-44BE-B73D-C66066863DA8}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{BEC0E775-1A64-4C40-AEA7-ADF0A51417A2}"/>
+							<EndState Name="Calm" ID="{1E282DFF-6764-40B9-BF4A-DF37840AE891}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

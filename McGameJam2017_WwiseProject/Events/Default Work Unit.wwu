@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{5D662C6F-A562-41BC-9E21-322AA8A80D06}" SchemaVersion="75">
+<WwiseDocument Type="WorkUnit" ID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{5D662C6F-A562-41BC-9E21-322AA8A80D06}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8BDF9E1B-0924-47DB-A2FA-DF5313B109D3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music" ID="{906E1FD6-AB7C-458E-895F-8EE79B75BDFA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{F994E392-E643-42C7-B2C9-1878733FD0D4}" ShortID="411014248" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{B8057762-F5AC-4BE2-9CA5-339850C2062A}" Global="false">
+									<ObjectRef Name="New Music Switch Container" ID="{3EBBA732-06D0-43B2-9120-0867406E672C}" WorkUnitID="{958555CE-8709-41C8-ABD1-EFFEB12860B8}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music" ID="{CD9C2728-BD2B-4AC4-996D-07A848310E42}">
+					<ChildrenList>
+						<Action Name="Stop All" ID="{032CF116-0B74-488B-85D3-C227D5458362}" ShortID="774452123" Type="Stop" Scope="All" Global="false"/>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

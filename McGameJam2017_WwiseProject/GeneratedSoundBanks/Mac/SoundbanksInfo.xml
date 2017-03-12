@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>/Users/Marc-Antoine_Giguere/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/McGameJam2017/McGameJam2017_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/Marc-Antoine_Giguere/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/McGameJam2017/McGameJam2017_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Marc-Antoine_Giguere/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/McGameJam2017/McGameJam2017_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Marc-Antoine_Giguere/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/McGameJam2017/McGameJam2017_WwiseProject/GeneratedSoundBanks/Mac/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1141655420" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\BonneSoundbank</ObjectPath>
+			<ShortName>BonneSoundbank</ShortName>
+			<Path>BonneSoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="35760685" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - theme4.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - theme4_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="180427671" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - theme1.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - theme1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="385930087" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - Declencheur.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - Declencheur_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="441960924" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - introLoop.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - introLoop_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="794621881" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - End.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - End_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="851138804" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - theme3.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - theme3_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="899591762" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - theme2.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - theme2_4B8CC0C5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
