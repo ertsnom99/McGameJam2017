@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
     public const string ACTION_INPUT = "AInput";
     public const string INFECT_INPUT = "IInput";
 
+    public int joystickNumber;
+
     private PlayerMovement movementScript;
     private CharacterInteraction interactionScript;
   
@@ -42,10 +44,10 @@ public class PlayerController : MonoBehaviour {
     {
         Hashtable ht = new Hashtable();
 
-        ht.Add(VERTICAL_INPUT, Input.GetAxis("Vertical"));
-        ht.Add(HORIZONTAL_INPUT, Input.GetAxis("Horizontal"));
-        ht.Add(ACTION_INPUT, Input.GetButtonDown("Fire1"));
-        ht.Add(INFECT_INPUT, Input.GetButtonDown("Fire3"));    
+        ht.Add(VERTICAL_INPUT, Input.GetAxis("Joy" + joystickNumber + "Vertical"));
+        ht.Add(HORIZONTAL_INPUT, Input.GetAxis("Joy" + joystickNumber + "Horizontal"));
+        ht.Add(ACTION_INPUT, Input.GetButtonDown("Joy" + joystickNumber + "Fire1"));
+        ht.Add(INFECT_INPUT, Input.GetButtonDown("Joy" + joystickNumber + "Fire3"));    
         
         return ht;
     }

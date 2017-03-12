@@ -1,54 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="Project" SchemaVersion="75" WwiseVersion="v2016.2.2" WwiseBuild="6022">
 	<ProjectInfo>
-		<Project Name="McGameJam2017_WwiseProject" ID="{C339A245-0D2E-449D-8944-C0D5B6073203}">
+		<Project Name="McGameJam2017_WwiseProject" ID="{1F56A383-E0D7-4BEC-8C79-2A4EB1F60364}">
 			<Platforms>
-				<Platform Name="Mac" ReferencePlatform="Mac" ID="{4C0AE6F7-2D85-4068-82A3-8D42A6853BEB}" />
-				<Platform Name="Windows" ReferencePlatform="Windows" ID="{D53FD6A5-5DFE-44A4-AFD0-E63B54B769EF}" />
+				<Platform Name="Mac" ReferencePlatform="Mac" ID="{DB42F398-F329-4D15-A173-1AAA56BF23E0}" />
+				<Platform Name="Windows" ReferencePlatform="Windows" ID="{1415465F-88F4-462A-B395-142F933CA975}" />
 			</Platforms>
 			<PropertyList>
 				<Property Name="DefaultLanguage" Type="int32" Value="12" />
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
-						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\Kévin\Desktop\Kévin\Conjure\McGameJam2017\McGameJam2017\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\Tony\Documents\GitHub\McGameJam2017\McGameJam2017\Assets\StreamingAssets\GeneratedSoundBanks\Windows\" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
-						<Value Platform="Mac">Copy Streamed Files</Value>
 						<Value Platform="Windows">Copy Streamed Files</Value>
+						<Value Platform="Mac">Copy Streamed Files</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
-						<Value Platform="Mac">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Windows">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
+						<Value Platform="Mac">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
-						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
-						<Value Platform="Mac"></Value>
 						<Value Platform="Windows"></Value>
+						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2016.2|Build=6022|VersionName=v2016.2.2|Config=Release" />
@@ -8474,170 +8474,6 @@
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Wwise Convolution Reverb" PluginType="3" CompanyID="0" PluginID="127">
-					<PropertyList>
-						<Property Name="AlgoTypeSelect" Type="int32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="CenterLevel" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="DryLevel" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="FrontLevel" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="FrontRearDelay" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRChannelSelect" Type="int32">
-							<ValueList>
-								<Value>4</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRConvolutionSmooth" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRConvolutionSmoothMax" Type="Real32">
-							<ValueList>
-								<Value>100</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRConvolutionStart" Type="Real64">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRConvolutionStop" Type="Real64">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRConvolutionThreshold" Type="Real32">
-							<ValueList>
-								<Value>-144</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRGraphicEQAutomate" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRLPFAutomate" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRLPFSlope" Type="int32">
-							<ValueList>
-								<Value>6</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRLRMix" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRLevel" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRLevelAutomate" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="IRStretch" Type="Real32">
-							<ValueList>
-								<Value>100</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-						<Property Name="InputCenterLevel" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="InputLFELevel" Type="Real32">
-							<ValueList>
-								<Value>-96.3</Value>
-							</ValueList>
-						</Property>
-						<Property Name="InputStereoWidth" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="LFELevel" Type="Real32">
-							<ValueList>
-								<Value>-96.3</Value>
-							</ValueList>
-						</Property>
-						<Property Name="PreDelay" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="RearLevel" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="SoundEngineBlockSizeDefault" Type="int32">
-							<ValueList>
-								<Value>1024</Value>
-							</ValueList>
-						</Property>
-						<Property Name="SoundEngineSampleRateDefault" Type="int32">
-							<ValueList>
-								<Value>48000</Value>
-							</ValueList>
-						</Property>
-						<Property Name="SoundEngineSampleRateMac" Type="int32">
-							<ValueList>
-								<Value>48000</Value>
-							</ValueList>
-						</Property>
-						<Property Name="SoundEngineSampleRateWiiUSW" Type="int32">
-							<ValueList>
-								<Value>32000</Value>
-							</ValueList>
-						</Property>
-						<Property Name="SoundEngineSampleRateiOS" Type="int32">
-							<ValueList>
-								<Value>48000</Value>
-							</ValueList>
-						</Property>
-						<Property Name="StereoWidth" Type="Real32">
-							<ValueList>
-								<Value>180</Value>
-							</ValueList>
-						</Property>
-						<Property Name="WetLevel" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-				</SharedPropertyList>
 				<SharedPropertyList ClassName="Wwise Meter" PluginType="3" CompanyID="0" PluginID="129">
 					<PropertyList>
 						<Property Name="ApplyDownstreamVolume" Type="bool">
@@ -9700,7 +9536,7 @@
 					<Comment></Comment>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{3A6B1A36-C7D3-4DF0-B3EF-1A077B8A4959}">
+							<Curve Name="" ID="{52794538-695C-412E-A1E4-4D45577CE6DE}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -9721,7 +9557,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{44A3768D-75E9-4F3B-B7CC-18648266F125}">
+							<Curve Name="" ID="{7FFB8036-A2BC-4BDB-A212-297FE1951C32}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9742,7 +9578,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{EC496E0E-54E8-49D6-81A4-BA9510187264}">
+							<Curve Name="" ID="{A6B3987F-D453-48D5-A448-C513DA14534E}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9763,7 +9599,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{319CF3AF-206E-4C43-8DB9-52C7F156C589}">
+							<Curve Name="" ID="{85BD72E0-71F2-43FF-AA1C-AFB5C0E4C600}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -9784,7 +9620,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{DA6C5E1E-E86C-40AC-92E6-B373175C6751}">
+							<Curve Name="" ID="{D350B16A-02BF-484C-9389-07F63A9E52BF}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9805,7 +9641,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{31494247-3D4A-49B2-B394-57F5456491B7}">
+							<Curve Name="" ID="{73E88EE9-04F4-4BD6-AF54-7F1FE7E04DCE}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>

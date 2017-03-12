@@ -8,46 +8,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb6ead4e234d2eb40adfda7b14231c24, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ca5a47c09483dc46baa4df89a5c1622, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{5D662C6F-A562-41BC-9E21-322AA8A80D06}'
-    m_lastTimePsrt1: -1654000628
-    m_lastTimePart2: -1999345619
+    Guid: '{7F64443D-B872-4A34-B8BB-322821CE4C16}'
+    m_lastTimePsrt1: -486363324
+    m_lastTimePart2: -1999345423
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{C944BE78-9A98-4151-AA27-A1D51635F83D}'
-    m_lastTimePsrt1: -1654000628
-    m_lastTimePart2: -1999345619
+    Guid: '{5D27B68C-B127-42BB-8347-2EEC67F5E0F4}'
+    m_lastTimePsrt1: -486278124
+    m_lastTimePart2: -1999345423
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{9D36CB77-562C-4E6F-B83C-3E27237B78DD}'
-    m_lastTimePsrt1: -1653844900
-    m_lastTimePart2: -1999345619
+    Guid: '{D4835DE5-65D2-48A6-AD97-B69F035C526F}'
+    m_lastTimePsrt1: -486171173
+    m_lastTimePart2: -1999345423
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{3C174660-0545-44CF-8948-DA6BBD6F910C}'
-    m_lastTimePsrt1: -1653844900
-    m_lastTimePart2: -1999345619
+    Guid: '{4585FBF0-4308-422F-B522-EE78B1918131}'
+    m_lastTimePsrt1: -486303278
+    m_lastTimePart2: -1999345423
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
-    Guid: '{D0B5BE30-39E8-417E-A1C8-AB6F74B99327}'
-    m_lastTimePsrt1: -1653844900
-    m_lastTimePart2: -1999345619
+    Guid: '{0D687DA7-8670-4E7F-BE3B-C1B4D67E6BFA}'
+    m_lastTimePsrt1: -486061091
+    m_lastTimePart2: -1999345423
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /McGameJam2017_WwiseProject
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
