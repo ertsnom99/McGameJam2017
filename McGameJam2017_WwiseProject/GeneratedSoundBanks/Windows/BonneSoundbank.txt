@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	35760685	McGamejam - SomeoneOdd - theme4	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Windows\SFX\McGamejam - SomeoneOdd - theme4_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme4\McGamejam - SomeoneOdd - theme4		2646144
+	180427671	McGamejam - SomeoneOdd - theme1	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Windows\SFX\McGamejam - SomeoneOdd - theme1_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme1\McGamejam - SomeoneOdd - theme1		2976892
+	385930087	McGamejam - SomeoneOdd - Declencheur	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Windows\SFX\McGamejam - SomeoneOdd - Declencheur_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\McGamejam - SomeoneOdd - Declencheur\McGamejam - SomeoneOdd - Declencheur		1918540
+	441960924	McGamejam - SomeoneOdd - introLoop	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Windows\SFX\McGamejam - SomeoneOdd - introLoop_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Calm\McGamejam - SomeoneOdd - introLoop\McGamejam - SomeoneOdd - introLoop		2646192
+	794621881	McGamejam - SomeoneOdd - End	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Windows\SFX\McGamejam - SomeoneOdd - End_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\GameOver\McGamejam - SomeoneOdd - End\McGamejam - SomeoneOdd - End		1984644
+	851138804	McGamejam - SomeoneOdd - theme3	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Windows\SFX\McGamejam - SomeoneOdd - theme3_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme3\McGamejam - SomeoneOdd - theme3		2976896
+	899591762	McGamejam - SomeoneOdd - theme2	Y:\Documents\McGameJam2017\McGameJam2017_WwiseProject\.cache\Windows\SFX\McGamejam - SomeoneOdd - theme2_4B8CC0C5.wem		\Interactive Music Hierarchy\Default Work Unit\New Music Switch Container\Panic\McGamejam - SomeoneOdd - theme2\McGamejam - SomeoneOdd - theme2		2976896
+
