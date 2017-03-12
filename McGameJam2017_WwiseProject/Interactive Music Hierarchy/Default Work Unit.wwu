@@ -649,12 +649,15 @@
 							</CueList>
 						</MusicSegment>
 						<MusicPlaylistContainer Name="Menu" ID="{7673BE4C-86A8-4372-B2D6-AAA987E02E31}" ShortID="886834674">
+							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7A746000-EB41-4EEA-B20E-B436D4DEB693}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5D36B2C6-846C-409B-9525-7308662070D8}"/>
+									<ObjectRef Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}" WorkUnitID="{5D36B2C6-846C-409B-9525-7308662070D8}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
