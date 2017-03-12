@@ -21,9 +21,33 @@
 			<ShortName>New_Soundbank</ShortName>
 			<Path>New_Soundbank.bnk</Path>
 			<IncludedMemoryFiles>
+				<File Id="180608282" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - Declencheur.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - Declencheur_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="367835769" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - theme4.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - theme4_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="392483468" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - introLoop.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - introLoop_4B8CC0C5.wem</Path>
+				</File>
 				<File Id="474452598" Language="SFX">
 					<ShortName>McGamejam - SomeoneOdd - theme1.wav</ShortName>
 					<Path>SFX/McGamejam - SomeoneOdd - theme1_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="486319937" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - theme3.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - theme3_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="647693853" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - End.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - End_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="799123517" Language="SFX">
+					<ShortName>McGamejam - SomeoneOdd - theme2.wav</ShortName>
+					<Path>SFX/McGamejam - SomeoneOdd - theme2_4B8CC0C5.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

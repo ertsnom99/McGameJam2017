@@ -1,6 +1,778 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}" SchemaVersion="75">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="GoodOlSwitch" ID="{ED9CD8E4-70B5-4679-9717-BDCF17871438}" ShortID="352372258">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="160"/>
+						<Property Name="TimeSignatureUpper" Type="int16" Value="5"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="Calm" ID="{FAFD52DD-2F18-4B30-BCB1-F5C33A5B4351}" ShortID="194042304">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="McGamejam - SomeoneOdd - introLoop" ID="{84E1E4A0-0424-48CA-8971-FC071FBCB7C9}" ShortID="494459890">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16125"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="McGamejam - SomeoneOdd - introLoop" ID="{E6624A04-B204-4467-99A3-10795CBFB400}" ShortID="924605252">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="McGamejam - SomeoneOdd - introLoop" ID="{A8ECE9EF-9AA1-42B1-ABF6-1E392064DFD9}" ShortID="392483468">
+													<Language>SFX</Language>
+													<AudioFile>McGamejam - SomeoneOdd - introLoop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{56FA9798-598D-4E5B-A902-934947360E51}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{36357D10-5C10-42A4-B74C-6BDA78CBA042}">
+													<ClipList>
+														<MusicClip Name="McGamejam - SomeoneOdd - introLoop" ID="{D17317F6-3B09-4396-A102-420DE618E81C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="15000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="McGamejam - SomeoneOdd - introLoop" ID="{A8ECE9EF-9AA1-42B1-ABF6-1E392064DFD9}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{FA97A385-E756-4D56-BD54-414DAA95A1CE}"/>
+										<MusicCue Name="Exit Cue" ID="{44BC5DE9-D075-40F9-BD99-6EA1DB751F50}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="15000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{67BA2C03-4BCB-4BB5-B574-1A630AB66D75}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="14917.8832116788"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{AD5ADA3D-AC6B-43E8-A434-CF909A4C697C}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="11277.3722627737"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{299C01E1-4D8A-4B0C-93D5-87353A02CDE1}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="7500"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{D75F43B3-F25E-4493-98EF-CAFA38C87A72}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="3804.74452554745"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{F2C7B4FC-C830-4D2B-BB87-F27D7E6ABDEB}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{BBD94AA1-9648-44E8-8E60-FC6E9637369B}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{3CAFF5CE-4358-4E5C-BD79-EAE9215DB4FC}" ShortID="498140112">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{A88D7ABD-AEA1-4BEB-82DA-CE2D6B887565}" ShortID="114862040">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="McGamejam - SomeoneOdd - introLoop" ID="{84E1E4A0-0424-48CA-8971-FC071FBCB7C9}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Panic" ID="{8A893D92-E772-41F3-9556-3C42CB37389F}" ShortID="874368733">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="McGamejam - SomeoneOdd - theme1" ID="{6B43CD27-7A60-4F78-80E7-953587F043D0}" ShortID="373728510">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16875"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="McGamejam - SomeoneOdd - theme1" ID="{566F8059-5CED-4472-9944-8B245A4EF8ED}" ShortID="312352475">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="McGamejam - SomeoneOdd - theme1" ID="{C8EF8056-35FC-4C83-96DE-985B669265CC}" ShortID="474452598">
+													<Language>SFX</Language>
+													<AudioFile>McGamejam - SomeoneOdd - theme1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{C0FE75BA-4BB2-48B6-8C59-FA35052ACB3F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{DB40A3F8-10F6-4F24-A7D1-D1F018B781E8}">
+													<ClipList>
+														<MusicClip Name="McGamejam - SomeoneOdd - theme1" ID="{77E80137-2EE5-40F8-9AB4-B6C4A8B44541}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16874.9886621315"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="McGamejam - SomeoneOdd - theme1" ID="{C8EF8056-35FC-4C83-96DE-985B669265CC}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{49A58E87-15A7-4452-A78C-3E1EDD4C9D0E}"/>
+										<MusicCue Name="Exit Cue" ID="{B1DCCC78-299E-42B0-93A6-D375721AC2EE}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="15000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{60CB8C31-DD08-4DD0-8979-26809AADAD99}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="7482.88730820795"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{4FE4FEAF-66F7-4B23-A95E-17873B811636}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="15027.3621662777"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="McGamejam - SomeoneOdd - theme2" ID="{9DE6EC2B-6D3F-4879-99C5-8DAA9AF21110}" ShortID="761187630">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16875.0113378685"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="McGamejam - SomeoneOdd - theme2" ID="{AE0EBD02-D34E-4FC9-BAB5-C4848407BAC7}" ShortID="537434032">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="McGamejam - SomeoneOdd - theme2" ID="{36162632-7F68-40F2-9930-9BF7967020E1}" ShortID="799123517">
+													<Language>SFX</Language>
+													<AudioFile>McGamejam - SomeoneOdd - theme2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{E578716C-FA7A-4D86-B147-0DC8C148EEE9}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{F6DEF50E-E8FB-4983-9A79-8DE4279AF692}">
+													<ClipList>
+														<MusicClip Name="McGamejam - SomeoneOdd - theme2" ID="{BE8441E3-A218-4F26-A4AC-730B71073CEF}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16875.0113378685"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="McGamejam - SomeoneOdd - theme2" ID="{36162632-7F68-40F2-9930-9BF7967020E1}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{CB827B4E-87CA-4A64-AC41-C513EECCB393}"/>
+										<MusicCue Name="Exit Cue" ID="{359325AB-5B51-4A59-982D-D3EE6E4CA328}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="15000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{B59DACCB-F24F-43F8-9F4E-C4D3A7A95481}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="7500"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{CAE53FFC-6E25-4087-A0B7-175A862DBB68}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="15000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="McGamejam - SomeoneOdd - theme3" ID="{F3CEFB1A-0BD7-4765-9A9E-3F3066BD2F62}" ShortID="311345151">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="16875.0113378685"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="McGamejam - SomeoneOdd - theme3" ID="{DAA67D9C-6A8D-493A-9BD8-3EBA869E32F3}" ShortID="147771595">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="McGamejam - SomeoneOdd - theme3" ID="{DA19520F-BAF2-4728-B305-E35596E957CB}" ShortID="486319937">
+													<Language>SFX</Language>
+													<AudioFile>McGamejam - SomeoneOdd - theme3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{B18D99DC-5906-4E7E-B7A3-9A90EDFA9AAC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{4B677D0A-F20E-444A-B3E2-C75A6CFB1E2A}">
+													<ClipList>
+														<MusicClip Name="McGamejam - SomeoneOdd - theme3" ID="{5FAF5D6A-1CA9-4695-BF82-CB47F067DC0B}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="16875.0113378685"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="McGamejam - SomeoneOdd - theme3" ID="{DA19520F-BAF2-4728-B305-E35596E957CB}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{91430A48-EA6A-4E14-AF35-E84C0116AE77}"/>
+										<MusicCue Name="Exit Cue" ID="{E0F627BD-12DB-4714-BB82-3428C99A6DDC}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="15000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{46EC43B6-68EF-4DBC-BD82-93DE22812C1A}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="7482.89736332489"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{DAE7A83A-82A3-4FBE-AC27-5DC6C7174566}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="15000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="McGamejam - SomeoneOdd - theme4" ID="{B6934A4A-FA90-4000-AD5C-CDCA2582B0B9}" ShortID="945753735">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="15000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="McGamejam - SomeoneOdd - theme4" ID="{571F2D8A-F101-4DE2-B707-25C1C9811253}" ShortID="651239494">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="McGamejam - SomeoneOdd - theme4" ID="{49B35CE9-B2B3-40A7-BBDF-03775D730CA5}" ShortID="367835769">
+													<Language>SFX</Language>
+													<AudioFile>McGamejam - SomeoneOdd - theme4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{764B1537-16AA-4C97-890F-339AEDE9AEA5}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{8B80F7D3-09C9-44F3-9EA4-AC5570379102}">
+													<ClipList>
+														<MusicClip Name="McGamejam - SomeoneOdd - theme4" ID="{91D15AB2-C0D4-493D-A796-E00A8166A491}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="15000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="McGamejam - SomeoneOdd - theme4" ID="{49B35CE9-B2B3-40A7-BBDF-03775D730CA5}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{E956BCF4-2E33-4198-B7B7-DB9009747242}"/>
+										<MusicCue Name="Exit Cue" ID="{0991138C-AB36-4FD5-A212-111A44DFFFB8}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="15000"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{F39001F4-4409-4946-B845-2EEB55324FD7}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="7472.62773722628"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="" ID="{26861024-8110-404C-A94D-2297EA5577F5}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="2"/>
+												<Property Name="TimeMs" Type="Real64" Value="15000"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{95292CE4-C7EC-4706-BE01-ACAC98FE34AE}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{D4A248CE-55E0-47E6-B51D-1D023CE8F27D}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{B14E4A91-695E-488C-90A9-1CBCE23889ED}" ShortID="95035750">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlayMode" Type="int16" Value="2"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{A9ABEFA0-06DC-47DA-BDAF-4779B10B41CD}" ShortID="793252834">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="McGamejam - SomeoneOdd - theme1" ID="{6B43CD27-7A60-4F78-80E7-953587F043D0}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{50634BCB-36A3-49CB-9514-8338605417BF}" ShortID="438563427">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="McGamejam - SomeoneOdd - theme2" ID="{9DE6EC2B-6D3F-4879-99C5-8DAA9AF21110}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{0789E047-9240-40AC-BBB4-67953597886C}" ShortID="794515913">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="McGamejam - SomeoneOdd - theme3" ID="{F3CEFB1A-0BD7-4765-9A9E-3F3066BD2F62}"/>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{9CBED748-C809-4370-AFED-98FBBCDCFCD9}" ShortID="732182808">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="McGamejam - SomeoneOdd - theme4" ID="{B6934A4A-FA90-4000-AD5C-CDCA2582B0B9}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="EndGame" ID="{C241A5B0-78B2-4FBB-9781-EAA7AEF23DA5}" ShortID="470262083">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="McGamejam - SomeoneOdd - End" ID="{2BDCDD01-AF8B-429C-927D-B109C2699D50}" ShortID="240028659">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="13015.5109489051"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="McGamejam - SomeoneOdd - End" ID="{D860AADD-A0B9-466C-B0F6-48C3891FC5DD}" ShortID="829137854">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="McGamejam - SomeoneOdd - End" ID="{1AF3C327-8123-44F5-992C-3EBC6D8A032F}" ShortID="647693853">
+													<Language>SFX</Language>
+													<AudioFile>McGamejam - SomeoneOdd - End.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{D491D86E-8DB7-4CBF-982C-4CC4515FCE75}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{C709FCDF-2941-4776-A396-111DFED3F142}">
+													<ClipList>
+														<MusicClip Name="McGamejam - SomeoneOdd - End" ID="{4E07C33F-B991-4A12-8382-0CCF1B18CD0E}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="11250"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="McGamejam - SomeoneOdd - End" ID="{1AF3C327-8123-44F5-992C-3EBC6D8A032F}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{BC5B2F22-1BAE-405B-9781-46A15FC911CD}">
+											<PropertyList>
+												<Property Name="TimeMs" Type="Real64" Value="1875"/>
+											</PropertyList>
+										</MusicCue>
+										<MusicCue Name="Exit Cue" ID="{2D8CA803-FC42-44A0-B70E-01930503AE34}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="11250"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{324E45CB-65CB-4C77-A36C-886B2769019A}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{9CBCD1D4-61A6-4F7F-B890-4C3DF5C750C9}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<Playlist>
+								<MusicPlaylistItem Name="" ID="{5991A7B9-070E-42C5-B589-1DF51A414C58}" ShortID="475796903">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{C99E0295-3169-460C-A94E-7C587504BEC7}" ShortID="58307856">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="McGamejam - SomeoneOdd - End" ID="{2BDCDD01-AF8B-429C-927D-B109C2699D50}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Playlist>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{87FFD81C-1DB7-477F-BABA-A352DEAE19EA}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{A82AF574-35B8-43A1-A048-CDAB6291F436}">
+									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{11A44749-4E70-407D-8CD8-058911341518}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Panic" ID="{8A893D92-E772-41F3-9556-3C42CB37389F}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Calm" ID="{FAFD52DD-2F18-4B30-BCB1-F5C33A5B4351}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="McGamejam - SomeoneOdd - Declencheur" ID="{53E67683-835F-44A1-B594-815969CE9120}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{2A779908-EE0E-41BC-A60F-9C1D306386B4}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="8"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="1.2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{D401CD56-3F38-427C-AD30-3A37BB78D334}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="EndGame" ID="{C241A5B0-78B2-4FBB-9781-EAA7AEF23DA5}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Calm" ID="{FAFD52DD-2F18-4B30-BCB1-F5C33A5B4351}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{5134A229-D2AB-4C86-98CE-194C3363C624}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="8"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="1.2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{69CCC840-66AA-410E-B7ED-712B3C382408}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="EndGame" ID="{C241A5B0-78B2-4FBB-9781-EAA7AEF23DA5}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Panic" ID="{8A893D92-E772-41F3-9556-3C42CB37389F}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{F6D1F744-553E-4ABF-AAFB-0DE3F156FADC}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="8"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="1.2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<ArgumentList>
+						<ArgumentRef Name="States" ID="{4BA38B65-D1D4-41D6-B157-D52EA676571A}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Calm" ID="{428B03BC-1B49-4F1B-8365-B0396D9CDE1B}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Calm" ID="{FAFD52DD-2F18-4B30-BCB1-F5C33A5B4351}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="GameOver" ID="{37FB1735-25B8-46F3-B2BD-87D47EB2F163}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="EndGame" ID="{C241A5B0-78B2-4FBB-9781-EAA7AEF23DA5}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Panic" ID="{3941775B-02C0-47D4-ABEB-49E8588FA0D9}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Panic" ID="{8A893D92-E772-41F3-9556-3C42CB37389F}" WorkUnitID="{C2CC54E4-0F55-4786-99DD-9E5F6858A95F}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</MusicSwitchContainer>
+				<MusicSegment Name="McGamejam - SomeoneOdd - Declencheur" ID="{53E67683-835F-44A1-B594-815969CE9120}" ShortID="579777800">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="11000"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0DC9AF90-F759-423D-A98D-649BB90D8518}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="McGamejam - SomeoneOdd - Declencheur" ID="{23C3B2ED-ADCE-4534-826F-57624CC0B17B}" ShortID="448116406">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8E82A2A8-27E3-4F29-91A4-E7C4460E5024}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="McGamejam - SomeoneOdd - Declencheur" ID="{32CAFB58-5599-45F3-B56C-A7584D9B76FF}" ShortID="180608282">
+									<Language>SFX</Language>
+									<AudioFile>McGamejam - SomeoneOdd - Declencheur.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{4AC6002C-B162-444F-A1B4-1FE9211739A5}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{286A1B07-6EB7-4926-AA13-408D378F7FE8}">
+									<ClipList>
+										<MusicClip Name="McGamejam - SomeoneOdd - Declencheur" ID="{02E70E2D-8A8E-4D37-82FF-7F9402C9F5B1}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="10874.9886621315"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="McGamejam - SomeoneOdd - Declencheur" ID="{32CAFB58-5599-45F3-B56C-A7584D9B76FF}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{F39D054B-89C2-4349-B09B-CE2040A141E5}"/>
+						<MusicCue Name="Exit Cue" ID="{95BC9EAA-734C-4E86-BE1D-B94BBA0348C4}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="9000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
