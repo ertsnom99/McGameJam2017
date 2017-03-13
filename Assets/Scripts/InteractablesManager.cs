@@ -26,7 +26,7 @@ public class InteractablesManager : MonoBehaviour
     {
         int random = (int)Random.Range(0, potentialInfectiveObjects.Length - 1);
         //Debug.Log("Random : " + random);
-        //Debug.Log("Infected : " + potentialInfectiveObjects[random].name);
+Debug.Log("Infected : " + potentialInfectiveObjects[random].name);
         potentialInfectiveObjects[random].GetComponent<Interactable>().SetInfectedObject(true);
     }
 

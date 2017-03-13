@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ca5a47c09483dc46baa4df89a5c1622, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 2
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -317,11 +317,7 @@ MonoBehaviour:
         ObjectType: 7
       ID: 1141655420
       Guid: 1829323850a2564ea40fb37c755bf2dd
-  ExpandedItems:
-  - /McGameJam2017_WwiseProject
-  - /McGameJam2017_WwiseProject/Events
-  - /McGameJam2017_WwiseProject/Events/Default Work Unit
-  - /McGameJam2017_WwiseProject/Events/Default Work Unit/MusicEvents
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

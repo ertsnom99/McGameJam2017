@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
             GameObject player = Instantiate(playerCharacter);
             player.GetComponent<PlayerController>().joystickNumber = controllersManager.controllersNumber[i];
-
+print("num joy: " + player.GetComponent<PlayerController>().joystickNumber);
             player.transform.position = spawnPoint;
             player.transform.parent = characterContainers.transform;
 

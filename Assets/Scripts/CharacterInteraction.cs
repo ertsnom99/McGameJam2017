@@ -79,7 +79,7 @@ public class CharacterInteraction : MonoBehaviour
                 Debug.Log("a character is infectious");
                 character.setInfectious(true);
                 GameObject.Find("InteractablesManager").GetComponent<InteractablesManager>().StartInfection();
-                //GameObject.Find("ControllersManager").GetComponent<ControllersManager>().VibrateController(GetComponent<PlayerController>().joystickNumber - 1, 1, 0.15f);
+                GameObject.Find("ControllersManager").GetComponent<ControllersManager>().VibrateController(GetComponent<PlayerController>().joystickNumber, 1, 0.15f);
                 currentInteractable.GetComponent<Interactable>().SetInfectedObject(false);
             }           
             currentInteractable.GetComponent<Interactable>().Interaction(gameObject);

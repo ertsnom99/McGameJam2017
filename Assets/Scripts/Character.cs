@@ -39,6 +39,7 @@ public class Character : MonoBehaviour {
     IEnumerator ShowSymptoms()
     {
         yield return new WaitForSeconds(symptomsDelay);
+        AkSoundEngine.PostEvent("CalmToPanic", GameObject.Find("Music"));
         GetComponentInChildren<SpriteRenderer>().color = infectedColor;
         Debug.Log("Color changed");
     }
