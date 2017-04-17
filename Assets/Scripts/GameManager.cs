@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     private void InitializeVariables()
     {
         numberBotCharacters = 10;
-        remainingTime = 180.0f;
+        remainingTime = 3.0f;
         gameEnded = false;
     }
     
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < numberBotCharacters; i++)
         {
             Vector3 spawnPoint = areaManagerScript.GenerateSpawnPoint();
-
+            
             GameObject computer = Instantiate(computerCharacter);
             computer.GetComponent<AIMovement>().areaManager = areaManagerScript;
             computer.GetComponent<AIMovement>().changePriority(i);
@@ -101,7 +101,7 @@ public class GameManager : MonoBehaviour
 
             if (remainingTime <= 0)
             {
-                EndGame("time out! it's a draw!");
+                EndGame("Time Out!");
             }
             else
             {
@@ -185,8 +185,8 @@ public class GameManager : MonoBehaviour
     {
 
         // end game sound
-        AkSoundEngine.PostEvent("PanicToEnd", GameObject.Find("Music"));
-        AkSoundEngine.PostEvent("CalmToEnd", GameObject.Find("Music"));
+        // AkSoundEngine.PostEvent("PanicToEnd", GameObject.Find("Music"));
+        // AkSoundEngine.PostEvent("CalmToEnd", GameObject.Find("Music"));
 
         gameEnded = true;
 

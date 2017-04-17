@@ -7,11 +7,11 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/_scenes/character_movement.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/Menu.unity
   - enabled: 0
     path: Assets/_scenes/AI.unity
   - enabled: 0
     path: Assets/_scenes/character_infection.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_scenes/main_level.unity

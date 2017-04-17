@@ -36,7 +36,7 @@ public class Interactable : MonoBehaviour {
             relatedObject.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
             if (relatedObject.name == "Light")
             {
-                AkSoundEngine.PostEvent("Lightswitch", GameObject.Find("Music")); // sound effect
+                // AkSoundEngine.PostEvent("Lightswitch", GameObject.Find("Music")); // sound effect
                 GameObject.Find("LightsOff").GetComponent<Animator>().SetTrigger(FADE);
                 StartCoroutine(ManageOccupiedState(fadeDuration, true));
                 StartCoroutine(ManageLightsDelay());

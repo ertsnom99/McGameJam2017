@@ -36,7 +36,7 @@ public class Character : MonoBehaviour {
     IEnumerator ShowSymptoms()
     {
         yield return new WaitForSeconds(symptomsDelay);
-        AkSoundEngine.PostEvent("CalmToPanic", GameObject.Find("Music"));
+        // AkSoundEngine.PostEvent("CalmToPanic", GameObject.Find("Music"));
         GetComponentInChildren<SpriteRenderer>().color = infectedColor;
     }
 
@@ -49,7 +49,7 @@ public class Character : MonoBehaviour {
     IEnumerator Die()
     {
         // death sound effect 
-        AkSoundEngine.PostEvent("DeathSound", GameObject.Find("Music"));
+        // AkSoundEngine.PostEvent("DeathSound", GameObject.Find("Music"));
         IsDead = true;
         GetComponentInChildren<Animator>().SetTrigger(DIE);
         if (gameObject.tag == GameManager.BOT)

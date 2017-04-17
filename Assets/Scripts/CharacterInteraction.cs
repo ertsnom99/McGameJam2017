@@ -56,7 +56,7 @@ public class CharacterInteraction : MonoBehaviour
         {
             killDelay = 5.0f;
             // attack sound effect
-            AkSoundEngine.PostEvent("AttackSound", GameObject.Find("Music"));
+            // AkSoundEngine.PostEvent("AttackSound", GameObject.Find("Music"));
             foreach (GameObject killable in currentKillable)
             {
                   GetComponent<Character>().Kill(killable);            
@@ -72,6 +72,7 @@ public class CharacterInteraction : MonoBehaviour
             if (currentInteractable.GetComponent<Interactable>().IsInfectedObject() && gameObject.tag == GameManager.PLAYER)
             {
                 character.setInfectious(true);
+                Debug.Log("Someone has become a zombie.");
                 currentInteractable.GetComponent<Interactable>().SetInfectedObject(false);
                 GameObject.Find("InteractablesManager").GetComponent<InteractablesManager>().StartInfection();
                 GameObject.Find("ControllersManager").GetComponent<ControllersManager>().VibrateController(GetComponent<PlayerController>().joystickNumber, 1, 0.15f);                
