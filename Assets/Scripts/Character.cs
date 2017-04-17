@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,19 +16,18 @@ public class Character : MonoBehaviour {
     private float deathDelay = 15.0f;
     private float animationDelay = 2.5f;
 
-    public void setInfectious(bool b)
+    public void setInfectious(bool b) // can infect others
     {
         IsInfectious = b;
     }
 
-    public void setInfected(bool b)
+    public void setInfected(bool b) // has caught the virus
     {
         IsInfected = b;
     }
 
     public void BecomeInfected()
     {
-        Debug.Log("I AM INFECTED!!");
         IsInfected = true;
         StartCoroutine(ShowSymptoms());
         StartCoroutine(DieFromVirus());
@@ -41,7 +38,6 @@ public class Character : MonoBehaviour {
         yield return new WaitForSeconds(symptomsDelay);
         AkSoundEngine.PostEvent("CalmToPanic", GameObject.Find("Music"));
         GetComponentInChildren<SpriteRenderer>().color = infectedColor;
-        Debug.Log("Color changed");
     }
 
     IEnumerator DieFromVirus()
@@ -52,13 +48,12 @@ public class Character : MonoBehaviour {
 
     IEnumerator Die()
     {
-        // MUSIC 
+        // death sound effect 
         AkSoundEngine.PostEvent("DeathSound", GameObject.Find("Music"));
         IsDead = true;
         GetComponentInChildren<Animator>().SetTrigger(DIE);
         if (gameObject.tag == GameManager.BOT)
         {
-            Debug.Log("Script deactivated");
             GetComponent<AIMovement>().enabled = false;
             GetComponent<NavMeshAgent>().enabled = false;
         }
@@ -84,6 +79,4 @@ public class Character : MonoBehaviour {
     {
         StartCoroutine(Die());
     }
-
-
 }

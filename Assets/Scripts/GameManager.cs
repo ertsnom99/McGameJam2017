@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
             computer.transform.position = spawnPoint;
             computer.transform.parent = characterContainers.transform;
 
-            bots[i] =computer;
+            bots[i] = computer;
         }
     }
 
@@ -80,10 +80,8 @@ public class GameManager : MonoBehaviour
 
             GameObject player = Instantiate(playerCharacter);
             player.GetComponent<PlayerController>().joystickNumber = controllersManager.controllersNumber[i];
-print("num joy: " + player.GetComponent<PlayerController>().joystickNumber);
             player.transform.position = spawnPoint;
             player.transform.parent = characterContainers.transform;
-
             players[i] = player;
         }
     }
@@ -153,15 +151,15 @@ print("num joy: " + player.GetComponent<PlayerController>().joystickNumber);
             
             if (otherPlayersWin && infectiousPlayerWins)
             {
-                EndGame("it's a draw!");
+                EndGame("Draw!");
             }
             else if (otherPlayersWin)
             {
-                EndGame("the other players win!");
+                EndGame("Humans' victory!");
             }
             else if (infectiousPlayerWins)
             {
-                EndGame("the infectious player wins!");
+                EndGame("Zombie's victory!");
             }
         }
         else if (!gameEnded)
@@ -176,9 +174,9 @@ print("num joy: " + player.GetComponent<PlayerController>().joystickNumber);
                 }
             }
 
-            if (countRemainingPlayers <= 1)
+            if (countRemainingPlayers < 1)
             {
-                EndGame("every one lost... no one was infected!");
+                EndGame("Game Over!");
             }
         }
     }
@@ -186,7 +184,7 @@ print("num joy: " + player.GetComponent<PlayerController>().joystickNumber);
     private void EndGame(string message)
     {
 
-        //Music
+        // end game sound
         AkSoundEngine.PostEvent("PanicToEnd", GameObject.Find("Music"));
         AkSoundEngine.PostEvent("CalmToEnd", GameObject.Find("Music"));
 

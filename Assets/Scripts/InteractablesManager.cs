@@ -25,14 +25,11 @@ public class InteractablesManager : MonoBehaviour
     public void InfectRandomObject()
     {
         int random = (int)Random.Range(0, potentialInfectiveObjects.Length - 1);
-        //Debug.Log("Random : " + random);
-Debug.Log("Infected : " + potentialInfectiveObjects[random].name);
         potentialInfectiveObjects[random].GetComponent<Interactable>().SetInfectedObject(true);
     }
 
     public void StartInfection()
     {
-        print("INFECTION START!");
         InfectionStarted = true;
     }
 }

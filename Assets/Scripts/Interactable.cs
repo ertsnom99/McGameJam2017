@@ -36,43 +36,37 @@ public class Interactable : MonoBehaviour {
             relatedObject.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
             if (relatedObject.name == "Light")
             {
-                // MUSIC 
-                AkSoundEngine.PostEvent("Lightswitch", GameObject.Find("Music"));
+                AkSoundEngine.PostEvent("Lightswitch", GameObject.Find("Music")); // sound effect
                 GameObject.Find("LightsOff").GetComponent<Animator>().SetTrigger(FADE);
                 StartCoroutine(ManageOccupiedState(fadeDuration, true));
                 StartCoroutine(ManageLightsDelay());
             } else
             {
-                if (relatedObject.name == "Balcony")
+                /* if (relatedObject.name == "Balcony")
                 {
-                    // MUSIC 
                     AkSoundEngine.PostEvent("BirdNest", GameObject.Find("Music"));
                 }
                 if (relatedObject.name == "Coffee")
                 {
-                    // MUSIC 
                     AkSoundEngine.PostEvent("CoffeeMachine", GameObject.Find("Music"));
                 }
                 if (relatedObject.name == "Toilet")
                 {
-                    // MUSIC 
                     AkSoundEngine.PostEvent("Toilet", GameObject.Find("Music"));
                 }
                 if (relatedObject.name == "Garden")
                 {
-                    // MUSIC 
                     AkSoundEngine.PostEvent("Plant", GameObject.Find("Music"));
                 }
                 if (relatedObject.name == "Trash")
                 {
-                    // MUSIC 
                     AkSoundEngine.PostEvent("Trashcan", GameObject.Find("Music"));
                 }
                 if (relatedObject.name == "Workspace")
                 {
-                    // MUSIC 
                     AkSoundEngine.PostEvent("Workstation", GameObject.Find("Music"));
                 }
+                */
                 this.interactingCharacter = interactingCharacter;
                 interactingCharacter.GetComponentInChildren<SpriteRenderer>().enabled = false;
                 interactingCharacter.GetComponentInChildren<Animator>().SetTrigger(ANIMATE_INTERACTION);
